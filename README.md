@@ -1,5 +1,7 @@
 # MusicQuest
 
+### [Open the app online →](https://musicquest.aurorax.chatgpt.site/)
+
 **Understand a small musical idea, hear or inspect an original example, then put it to work.**
 
 MusicQuest is a self-contained learning website with two separate, prerequisite-aware courses. Start without music-theory or coding experience. The paths grow toward advanced, practical decisions—not a promise of professional results or a complete conservatory curriculum.
@@ -27,13 +29,15 @@ Read and reason in MusicQuest, then type your work in [external Strudel](https:/
 5. Use the course/topic maps, genre workshops, searchable glossary and searchable function guide when you need a reminder.
 6. Saving is optional. In **Progress**, enable browser saving or stay session-only. Export a JSON backup before changing devices or clearing browser data. Import merges recognized lesson progress with existing progress. Saving is local to this browser and origin; there is no account or cloud sync.
 
-Audio stops on navigation, Stop or hiding the tab and is bounded to 12 seconds. Labeled note and rhythm diagrams provide non-audio alternatives. A keyboard skip link reaches the main content. Multiple saved-progress tabs reconcile updates; avoid changing saving settings in several tabs at once. Cross-tab serialization uses Web Locks where available; the fallback is not transactionally atomic.
+Audio stops on navigation, Stop or hiding the tab and is bounded to 12 seconds. Labeled note and rhythm diagrams provide non-audio alternatives. A keyboard skip link reaches the main content. Open tabs share saved progress, but browser support varies. For the safest experience, change saving settings in one tab at a time and export a backup before important changes.
 
 ## Online or local use
 
 **Online:** open [MusicQuest on ChatGPT Sites](https://musicquest.aurorax.chatgpt.site/) from ChatGPT or a normal browser. The hosted site is public. An internet connection is required; this is a learning website, not a conversational ChatGPT tutor.
 
-**Local / offline-capable copy:** download or clone this repository while online, then run the local server below. Lessons, examples, glossary, reference data and synthesized demonstrations are bundled; they do not call an external API. Local startup and course loading were tested. A browser session with networking explicitly disabled was not available for verification, so this is not an offline-PWA or network-disconnection certification. External Strudel and documentation links still require internet. ChatGPT itself is not made available offline.
+**Use a downloaded copy locally:** download or clone this repository while online, then follow the steps below. The lessons, examples, glossary, function guide and built-in sound demonstrations are included, so these features do not need an internet service.
+
+We tested lessons, reference search, practice and sound controls while the app was blocked from loading outside resources. We did not test a fully disconnected computer or verify the sound by listening. External Strudel and documentation links still need internet. The hosted website is not automatically saved for offline use, and this does not make ChatGPT available offline.
 
 Progress stays in the browser and origin where you use the app. Hosted and localhost progress are separate; use Export/Import to transfer a backup. No cloud sync or offline cache is promised.
 
