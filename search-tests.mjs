@@ -1,0 +1,5 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {searchReferences}from'./dist/search.js';
+const rows=JSON.parse(fs.readFileSync('dist/reference.json')),before=JSON.stringify(rows);
+for(const name of ['mod','angle','speak','getFrequency','getDuration','h','hsla'])assert.equal(searchReferences(rows,name)[0].name,name,name+' exact result first');
+for(const [alias,name]of [['getFreq','getFrequency'],['getDur','getDuration']])assert.equal(searchReferences(rows,alias)[0].name,name,alias+' resolves canonical');
+assert.equal(searchReferences(rows,' MOD ')[0].name,'mod');assert.equal(searchReferences(rows,'not-a-real-function-xxxxxxxx').length,0);assert.equal(searchReferences(rows).length,655);const cat=rows.find(r=>r.name==='mod').category;assert.ok(searchReferences(rows,'mod',cat).every(r=>r.category===cat));assert.equal(JSON.stringify(rows),before,'search does not mutate reference data');console.log('Search tests passed: exact names and aliases first, case/space normalization, category/no-results, no data mutation.');

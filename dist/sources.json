@@ -1,0 +1,58 @@
+{
+  "app": "MusicQuest",
+  "release": "1.1.1",
+  "authored": "2026-10-28",
+  "lesson_policy": "Original educational prose, worked examples, exercises and synthesized audio. No artist recordings or compositions copied.",
+  "reference_source": {
+    "repository": "https://github.com/AuroraX98/Strudel-Cheat-Sheet",
+    "commit": "c790d05c84ebfc8d6facb813ebb5b08b2cc1c261",
+    "snapshot_date": "2026-10-03",
+    "entry_count": 576,
+    "scope": "Command/family inventory includes aliases, library helpers, legacy and extension controls. Not a claim to include every current Strudel export.",
+    "license_note": "No repository LICENSE file was found during research. Names and factual signatures are used as reference facts; explanations are independently authored. Raw HTML, source example recordings and copied third-party compositions are not distributed. External Strudel and packages retain their own license requirements.",
+    "syntax_or_parameter_outlines": 452,
+    "original_examples_or_fragments": 243
+  },
+  "official_docs": "https://strudel.cc/workshop/",
+  "external_repl": "https://strudel.cc/",
+  "audio": "Original bounded Web Audio synthesis; no embedded Strudel code or external audio service.",
+  "daw_sources": [
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/pianoroll.htm",
+    "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/channelrack.htm"
+  ],
+  "curriculum": {
+    "theory_lessons": 115,
+    "strudel_lessons": 50,
+    "new_genre_lessons": 57,
+    "genre_topics": [
+      "dubstep",
+      "trance",
+      "synthwave",
+      "rap",
+      "pop",
+      "classical selected forms",
+      "cinematic narrative cues"
+    ],
+    "glossary_terms": 446,
+    "contextual_glossary": "Every lesson has original local definitions for all declared terms."
+  },
+  "verification": "Original 108 lessons preserved; 57 genre additions independently reviewed. Reference additions and canonical corrections independently reviewed. 35 added examples passed 53 pure-pattern assertions on published core/mini/transpiler 1.2.6; no current-live or audio certification. 69 listening-view schedule tests pass. See reference-scope.json and docs/VERIFICATION.md for limits.",
+  "current_reference": {
+    "total_reference_rows": 655,
+    "original_snapshot_rows": 576,
+    "new_rows": 79,
+    "alias_patch_rows": 20,
+    "canonical_name_corrections": 2,
+    "audit_date": "2026-10-28",
+    "coverage_scope": "reference-scope.json",
+    "completeness": "No promise of every callable in every live or optional build."
+  },
+  "genre_primary_sources": [
+    "https://www.image-line.com/fl-studio-learning-content/fl-studio-online-manual/html/playlist.htm",
+    "https://makingmusic.ableton.com/arranging-as-a-subtractive-process",
+    "https://viva.pressbooks.pub/openmusictheory/",
+    "https://musictheory.pugetsound.edu/mt21c/",
+    "https://college.berklee.edu/courses/scrn-240",
+    "https://online.berklee.edu/courses/film-score-analysis"
+  ]
+}

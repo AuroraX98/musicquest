@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';import {createProgressStore,parseProgress,PROGRESS_KEY}from'./dist/progress.js';
+const ids=new Set(['a','b','c']),events=[];let raw=null,failGet=false,failSet=false,failRemove=false,epoch=0;
+const storage={getItem(){if(failGet)throw Error('blocked');return raw},setItem(k,v){if(failSet)throw Error('quota');raw=v},removeItem(){if(failRemove)throw Error('blocked');raw=null}};
+let tail=Promise.resolve();const locks={request(name,fn){const p=tail.then(fn,fn);tail=p.catch(()=>{});return p}};
+const create=()=>createProgressStore({storage,locks,knownIds:ids,onChange:(s,m,ok)=>events.push({s,m,ok}),makeEpoch:()=>String(++epoch)});
+const fixture=(passed,completed=passed)=>JSON.stringify({app:'MusicQuest',version:1,passed,completed});
+const a=create();assert.ok(a.initialize().ok);await a.pass('a');await a.complete('a');assert.equal(raw,null,'opt-out is session only');assert.ok((await a.setEnabled(true)).ok);assert.deepEqual(JSON.parse(raw).completed,['a']);
+const b=create();b.initialize();assert.ok((await b.importText(fixture(['b']))).ok);assert.deepEqual([...b.snapshot().completed].sort(),['a','b'],'import merges');a.refreshFromStorage();assert.equal(a.snapshot().completed.size,2);
+for(const bad of ['{oops',JSON.stringify({app:'Wrong',version:1,passed:[],completed:[]}),JSON.stringify({app:'MusicQuest',version:2,passed:[],completed:[]}),JSON.stringify({app:'MusicQuest',version:1,passed:'a',completed:[]})]){const before=raw;assert.equal((await b.importText(bad)).ok,false);assert.equal(raw,before,'bad import cannot alter saved data')}
+await b.importText(fixture(['a','a','unknown'],['a','a','unknown']));assert.equal(b.snapshot().completed.size,2);assert.equal(b.snapshot().completed.has('unknown'),false);
+const exportText=JSON.stringify(b.exportData());assert.deepEqual([...parseProgress(exportText,ids).completed].sort(),['a','b']);
+await a.clear();await b.complete('a');assert.equal(JSON.parse(raw).completed.length,0,'stale tab cannot resurrect cleared completion');
+await Promise.all([a.pass('a'),b.pass('b')]);assert.deepEqual(JSON.parse(raw).passed.sort(),['a','b'],'serialized cross-tab additions retained');
+await a.setEnabled(false);await b.pass('c');assert.equal(raw,null,'stale tab cannot re-enable saving');assert.equal(b.snapshot().enabled,false);
+failSet=true;assert.equal((await b.setEnabled(true)).ok,false);assert.equal(b.snapshot().enabled,false,'failed opt-in not shown enabled');failSet=false;await b.setEnabled(true);
+failSet=true;assert.equal((await b.pass('a')).ok,false);assert.match(events.at(-1).m,/could not be saved/);failSet=false;
+const beforeClear=raw;failSet=true;assert.equal((await b.clear()).ok,false);assert.equal(raw,beforeClear);failSet=false;
+failRemove=true;assert.equal((await b.setEnabled(false)).ok,false);assert.equal(b.snapshot().enabled,true);failRemove=false;
+raw='{corrupt';const c=create();assert.equal(c.initialize().ok,false);assert.equal(raw,'{corrupt');assert.ok((await c.clear()).ok);assert.equal(raw,null,'explicit clear recovers corrupt storage');
+failGet=true;const d=create();assert.equal(d.initialize().ok,false);await d.pass('c');assert.ok(d.snapshot().passed.has('c'),'session learning still works without storage');failGet=false;
+console.log('Progress tests passed: opt-in/off, merge import, invalid/duplicate/unknown inputs, roundtrip, stale-tab clear/opt-out barriers, serialized writes, truthful storage failures and corrupt-store recovery.');
+raw=null;const offTab=create();offTab.initialize();await offTab.pass('c');const enabledTab=create();enabledTab.initialize();await enabledTab.pass('a');await enabledTab.setEnabled(true);offTab.refreshFromStorage();assert.equal(offTab.snapshot().enabled,false);assert.ok(offTab.snapshot().passed.has('c'),'off-session checks survive other-tab save');assert.equal(JSON.parse(raw).passed.includes('c'),false,'session-only checks are not silently published');await offTab.setEnabled(true);assert.deepEqual(JSON.parse(raw).passed.sort(),['a','c'],'explicit enable merges session checks');
+const stale=create();stale.initialize();await enabledTab.clear();await stale.setEnabled(true);assert.equal(JSON.parse(raw).passed.length,0,'enabled stale tab respects newer clear epoch');console.log('Additional progress checks passed: session-only isolation and explicit merge; enable respects a newer clear epoch.');
+raw=null;const extra=create();extra.initialize();await extra.importText(fixture(['a']));await extra.importText(fixture([]));assert.deepEqual([...extra.snapshot().completed],['a'],'empty import preserves current checks');await extra.importText(fixture([],['b']));assert.equal(extra.snapshot().completed.has('b'),false,'reflection requires imported passed check');
+for(const bad of [null,[],{app:'MusicQuest',version:1,passed:[9],completed:[]},{app:'MusicQuest',version:1,passed:[],completed:[null]}])assert.equal((await extra.importText(JSON.stringify(bad))).ok,false);
+const fallback=createProgressStore({storage,knownIds:ids});fallback.initialize();await fallback.pass('b');await fallback.setEnabled(true);assert.ok(JSON.parse(raw).passed.includes('b'),'single-store no-Web-Locks fallback saves');
+console.log('Progress boundaries passed: empty merge, reflection prerequisite, nonstring rejection and single-store fallback.');

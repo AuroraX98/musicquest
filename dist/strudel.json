@@ -1,0 +1,2553 @@
+[
+  {
+    "id": "s00a",
+    "title": "Learn here, play there",
+    "unit": "0 · Start with no coding",
+    "level": "Beginner",
+    "prerequisites": [],
+    "goal": "Know where code runs and how to stop sound.",
+    "explain": [
+      "This app is a learning guide. It shows examples and asks you to reason about them. It does not contain the Strudel editor and does not run Strudel code. Use the separate official Strudel website when a lesson asks you to try a pattern.",
+      "Before making sound, lower your listening volume and find the external editor’s Play or update control and its Stop control. A repeating musical pattern can continue until you stop it. This app’s occasional audio buttons are separate, short teaching demonstrations; they are not a recording of the code shown beside them."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "No code yet. Open the official Strudel editor separately, locate its playback controls, and keep this lesson available to read. You do not need to press Play to finish this orientation.",
+      "code": ""
+    },
+    "practice": {
+      "question": "Where will you type and run the Strudel exercises?",
+      "options": [
+        "In the separate Strudel editor",
+        "In this app’s glossary search box",
+        "In your computer’s volume control",
+        "Inside an audio demonstration button"
+      ],
+      "answer": 0,
+      "feedback": [
+        "This app teaches; the external editor runs your code.",
+        "The search box looks up terms, not music.",
+        "The volume control changes listening level only.",
+        "The audio buttons play independent teaching examples."
+      ]
+    },
+    "tryIt": "Open https://strudel.cc separately. Locate Stop before doing any later exercise. If you cannot find the controls, use its current official First Sounds guide.",
+    "terms": [
+      "editor",
+      "playback",
+      "Stop"
+    ],
+    "glossary": {
+      "editor": "The external workspace where you type and run code.",
+      "playback": "Producing sound from a pattern or recording.",
+      "Stop": "The control that ends playback; find it before starting a repeating pattern."
+    },
+    "sources": [
+      "https://strudel.cc/workshop/first-sounds/"
+    ]
+  },
+  {
+    "id": "s00b",
+    "title": "Text is not a number",
+    "unit": "0 · Start with no coding",
+    "level": "Beginner",
+    "prerequisites": [
+      "s00a"
+    ],
+    "goal": "Recognize quoted text and unquoted numeric values.",
+    "explain": [
+      "Code needs to distinguish words from numbers. Text surrounded by quotes is called a string. In \"bd\", the two letters are text. The quote marks show where that text starts and ends. They are not part of the sound’s name.",
+      "A value such as 0.2 is a number. The decimal point means two tenths. For now, use ordinary straight double quotes for the pattern text in our examples, and use unquoted numbers for simple settings. Strudel also has single-quote and backtick uses; we will not mix them into this first step."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "Reading-only comparison: \"bd\" is text; 0.2 is a number. These two values alone are not a complete music instruction.",
+      "code": "\"bd\"\n0.2"
+    },
+    "practice": {
+      "question": "Which item is a text string?",
+      "options": [
+        "120",
+        "\"bd\"",
+        "4",
+        "0.2"
+      ],
+      "answer": 1,
+      "feedback": [
+        "This is an unquoted whole number.",
+        "The matching quotes mark text.",
+        "This is an unquoted whole number.",
+        "This is an unquoted decimal number."
+      ]
+    },
+    "tryIt": "On paper, circle the quote marks in \"hh\". Write 0.5 beside it and explain which is text and which is a number.",
+    "terms": [
+      "string",
+      "quotes",
+      "number",
+      "decimal"
+    ],
+    "glossary": {
+      "string": "Text enclosed in quotes.",
+      "quotes": "Paired marks showing the beginning and end of text.",
+      "number": "A numeric value used for counting or settings.",
+      "decimal": "A way to write parts of a whole, such as 0.2 for two tenths."
+    },
+    "sources": [
+      "https://strudel.cc/learn/code/"
+    ]
+  },
+  {
+    "id": "s00c",
+    "title": "Give an instruction its input",
+    "unit": "0 · Start with no coding",
+    "level": "Beginner",
+    "prerequisites": [
+      "s00b"
+    ],
+    "goal": "Read the three parts of a simple function call.",
+    "explain": [
+      "A function is a named instruction. To call it, write its name followed by parentheses. Put the input inside those parentheses. That input is called an argument. A function call therefore tells the computer both what job to do and what information to use.",
+      "In s(\"bd\"), s is the instruction name, the parentheses contain its input, and \"bd\" is the text argument. The opening parenthesis must have a matching closing parenthesis. Read the instruction from outside to inside rather than treating every symbol as a mystery."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "Read this without playing: function name s; opening parenthesis (; text argument \"bd\"; closing parenthesis ). The next lesson explains the sound job performed by s.",
+      "code": "s(\"bd\")"
+    },
+    "practice": {
+      "question": "Which part of s(\"bd\") is its argument?",
+      "options": [
+        "The final parenthesis only",
+        "The whole computer",
+        "s",
+        "\"bd\""
+      ],
+      "answer": 3,
+      "feedback": [
+        "The closing parenthesis ends the call.",
+        "The argument is a value in this instruction.",
+        "s is the function name.",
+        "The text inside the parentheses is the supplied argument."
+      ]
+    },
+    "tryIt": "Write s(\"hh\") and label its name, input, and matching parentheses. Do not add any other symbols yet.",
+    "terms": [
+      "function",
+      "call",
+      "parentheses",
+      "argument"
+    ],
+    "glossary": {
+      "function": "A named instruction that performs a particular job.",
+      "call": "Using a function by writing its name with parentheses and any needed inputs.",
+      "parentheses": "The paired ( ) marks enclosing a function call’s arguments.",
+      "argument": "An input supplied to a function call."
+    },
+    "sources": [
+      "https://strudel.cc/learn/code/"
+    ]
+  },
+  {
+    "id": "s00d",
+    "title": "Choose one sound",
+    "unit": "0 · Start with no coding",
+    "level": "Beginner",
+    "prerequisites": [
+      "s00c"
+    ],
+    "goal": "Understand the first complete sound instruction.",
+    "explain": [
+      "The function s selects a sound. The name \"bd\" commonly selects a bass drum, also called a kick, in the standard Strudel editor. \"hh\" commonly selects a hi-hat. They are names of sound sources, not words that the computer speaks.",
+      "s(\"bd\") requests a repeating single-sound pattern. We will learn its timing container shortly; for now, notice that changing only the quoted name changes the chosen sound. Sample availability can differ between setups. Begin at low device volume, play briefly in the external editor, then stop."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "This is the first playback exercise. It asks for a bass-drum sound. Change only bd to hh for a second comparison, keeping the quotes and parentheses.",
+      "code": "s(\"bd\")"
+    },
+    "practice": {
+      "question": "Which edit requests a hi-hat while preserving the instruction’s structure?",
+      "options": [
+        "s(\"bd\") with a louder device volume",
+        "s(\"hh\")",
+        "\"s\"(bd)",
+        "s hh"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Volume does not choose another instrument.",
+        "The input text changes while the call structure stays intact.",
+        "This changes the name into text and removes the input quotes.",
+        "The required call punctuation is missing."
+      ]
+    },
+    "tryIt": "At a low device volume, play the kick briefly in external Strudel, stop, then try the hat. Stop again before continuing.",
+    "terms": [
+      "s",
+      "bass drum",
+      "hi-hat",
+      "sample"
+    ],
+    "glossary": {
+      "s": "The short sound-selection function.",
+      "bass drum": "A low drum sound, often called a kick.",
+      "hi-hat": "A cymbal sound often used to show rhythmic subdivisions.",
+      "sample": "A recording used as a sound source."
+    },
+    "sources": [
+      "https://strudel.cc/workshop/first-sounds/"
+    ]
+  },
+  {
+    "id": "s00e",
+    "title": "Continue with a dot",
+    "unit": "0 · Start with no coding",
+    "level": "Beginner",
+    "prerequisites": [
+      "s00d"
+    ],
+    "goal": "Add one level setting to an existing pattern.",
+    "explain": [
+      "A dot can continue working on the pattern you just made. In s(\"bd\").gain(0.2), the first call chooses the sound. The dot connects a second call, gain(0.2), which sets a lower sound level. This continuation is called chaining.",
+      "Read one call at a time. Each call has its own matching parentheses. The gain argument is an unquoted number; 0.2 means one fifth as a level multiplier, not one fifth of perceived loudness. Device volume and different sounds still matter, so keep your physical listening volume comfortable too."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "First choose bd; then apply gain 0.2. The dot connects the calls. It is outside the quoted sound name.",
+      "code": "s(\"bd\").gain(0.2)"
+    },
+    "practice": {
+      "question": "Which symbol connects the two calls?",
+      "options": [
+        "The quotes around bd",
+        "The dot before gain",
+        "The decimal point inside 0.2",
+        "The letter b"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Those quotes delimit the sound-name text.",
+        "That dot starts the chained call on the pattern.",
+        "That dot belongs to the decimal number, not to chaining.",
+        "The letter is part of the sound name."
+      ]
+    },
+    "tryIt": "Point to both pairs of parentheses, the chaining dot, and the decimal point. Explain why the two dots have different jobs.",
+    "terms": [
+      "chaining",
+      "gain",
+      "level multiplier"
+    ],
+    "glossary": {
+      "chaining": "Continuing work on a pattern with a dot followed by another function call.",
+      "gain": "A level multiplier for the sound.",
+      "level multiplier": "A number scaling signal amplitude; it does not directly state perceived loudness."
+    },
+    "sources": [
+      "https://strudel.cc/learn/code/"
+    ]
+  },
+  {
+    "id": "s01",
+    "title": "A cycle is a container",
+    "unit": "1 · Your first patterns",
+    "level": "Beginner",
+    "prerequisites": [
+      "s00e"
+    ],
+    "goal": "Separate a repeating cycle from the beats you count.",
+    "explain": [
+      "A Strudel pattern describes events across repeating chunks of time called cycles. A cycle is not automatically one beat or one bar. In this course we usually count four beats inside each cycle. That is a useful agreement, not a rule of Strudel.",
+      "Think of drawing a loop around four equal boxes. More events can fit inside those same boxes; the loop need not get longer. Before playing any new code in the external Strudel editor, predict when the loop will begin again. Keep your listening level low and locate its Stop control first. This app explains code; it does not run Strudel. The call setcpm(30) sets the shared clock to 30 cycles per minute. In the example, spaces split the cycle into four equal events; a later lesson explores this sequence rule in detail."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "30 cycles per minute means each cycle lasts 2 seconds. Counting four evenly spaced kicks per cycle gives 120 beats per minute. The next cycle starts after those four kicks.",
+      "code": "setcpm(30)\ns(\"bd bd bd bd\").gain(0.3)"
+    },
+    "practice": {
+      "question": "At 30 cycles per minute, you choose to count four beats per cycle. What is the beat tempo?",
+      "options": [
+        "60 BPM",
+        "120 BPM",
+        "240 BPM",
+        "30 BPM"
+      ],
+      "answer": 1,
+      "feedback": [
+        "This would be two beats per cycle.",
+        "30 cycles × 4 beats = 120 beats per minute.",
+        "That would require eight beats per cycle.",
+        "That counts cycles, not the four beats inside each cycle."
+      ]
+    },
+    "tryIt": "In external Strudel, try the example at a quiet volume. Count 1–2–3–4 twice. Explain why one cycle is two seconds, then stop playback.",
+    "terms": [
+      "cycle",
+      "beat",
+      "setcpm",
+      "s",
+      "gain"
+    ],
+    "sources": [
+      "https://strudel.cc/understand/cycles/"
+    ],
+    "glossary": {
+      "cycle": "The repeating unit of pattern time; it is not automatically a beat or bar.",
+      "beat": "The regular pulse you choose to count in music.",
+      "setcpm": "Sets the shared tempo in cycles per minute.",
+      "s": "Short name for sound: selects the sound source for events.",
+      "gain": "A level multiplier for the sound, not a measure of musical energy or quality."
+    }
+  },
+  {
+    "id": "s02",
+    "title": "Read a pattern as decisions",
+    "unit": "1 · Your first patterns",
+    "level": "Beginner",
+    "prerequisites": [
+      "s01"
+    ],
+    "goal": "Consolidate sound, argument, and level choices before adding rhythm.",
+    "explain": [
+      "You now know the pieces of a simple call and chain. Read s(\"bd\").gain(0.3) as two decisions: choose a bass-drum sound, then set its level. The argument in quotes names the sound; the unquoted decimal controls a setting. The short name s and the longer name sound are aliases for this same sound control.",
+      "When you edit, name the decision you want to change before touching the code. A different sound name tests instrumentation; a different gain tests level. Changing both together makes it harder to hear which change mattered. Soon you will add a third decision: when each event starts."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This requests one bass-drum event per cycle, at a reduced gain. bd is a conventional drum sample name in the standard Strudel environment; available sample sets can differ elsewhere.",
+      "code": "s(\"bd\").gain(0.3)"
+    },
+    "practice": {
+      "question": "You want a snare instead of a kick without changing the level. What should you change?",
+      "options": [
+        "Change gain to 3",
+        "Add a second gain call",
+        "Change bd to sd inside the quotes",
+        "Remove the quotes"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Gain changes level, not the instrument, and 3 is much louder.",
+        "Another gain setting does not select a snare.",
+        "The sound argument selects the instrument; the gain setting can stay.",
+        "Unquoted sd would be read as a JavaScript name, not this text sound name."
+      ]
+    },
+    "tryIt": "Point to the function, its argument, and the chained setting. Change only the sound name, predict the result, play briefly, then stop.",
+    "terms": [
+      "function",
+      "argument",
+      "s",
+      "sound",
+      "gain"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/first-sounds/"
+    ],
+    "glossary": {
+      "function": "A named instruction that receives inputs and performs a defined job.",
+      "argument": "Information supplied inside a function call’s parentheses.",
+      "s": "Short name for sound: selects the sound source for events.",
+      "sound": "Selects the sound source; s is its shorter alias.",
+      "gain": "A level multiplier for the sound, not a measure of musical energy or quality."
+    }
+  },
+  {
+    "id": "s03",
+    "title": "Spaces make a sequence",
+    "unit": "1 · Your first patterns",
+    "level": "Beginner",
+    "prerequisites": [
+      "s02"
+    ],
+    "goal": "Predict the position of events inside one cycle.",
+    "explain": [
+      "Inside a mini-notation string, spaces place events one after another. Mini-notation is the small pattern language inside the quotes. JavaScript is the language around those quotes. Mixing up these two layers is a common source of errors.",
+      "Imagine a circular clock face divided into equal slices. The sequence below has four slices, so the third event starts halfway around the clock. Adding another top-level event redraws all the slices; it does not simply append an extra beat after the old loop. This differs from extending a clip in a DAW."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Kick starts at cycle position 0, hat at 1/4, snare at 1/2, and hat at 3/4. Each event gets a quarter-cycle slot. The optional audio is a plain click model of these onset times, not Strudel’s engine or drum samples.",
+      "code": "s(\"bd hh sd hh\").gain(0.3)",
+      "beats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bpm": 120,
+      "beatsPerBar": 4,
+      "barCount": 1
+    },
+    "practice": {
+      "question": "If you replace this with five evenly spaced top-level sounds, while keeping tempo unchanged, what happens?",
+      "options": [
+        "The first four retain their old positions",
+        "The cycle becomes five seconds long",
+        "Five slots share the original cycle",
+        "Only the fifth event plays"
+      ],
+      "answer": 2,
+      "feedback": [
+        "The original quarter-cycle spacing changes to fifth-cycle spacing.",
+        "Cycle duration comes from tempo, not the number of tokens.",
+        "The same cycle is divided into fifths.",
+        "All five tokens form the sequence."
+      ]
+    },
+    "tryIt": "Write the cycle fractions below a four-event pattern on paper. Add one event and redraw them as fifths before listening.",
+    "terms": [
+      "sequence",
+      "mini-notation",
+      "event"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "sequence": "Events placed one after another in time.",
+      "mini-notation": "The compact pattern language written inside pattern strings.",
+      "event": "A timed occurrence carrying a value or sound instruction."
+    }
+  },
+  {
+    "id": "s04",
+    "title": "A rest still takes time",
+    "unit": "1 · Your first patterns",
+    "level": "Beginner",
+    "prerequisites": [
+      "s03"
+    ],
+    "goal": "Leave intentional gaps rather than deleting time.",
+    "explain": [
+      "The ~ symbol marks a rest: a time slot with no new event. A rest can be as important as a hit. Space lets a kick, bass note, or melody answer another part instead of competing with it.",
+      "Compare leaving an empty chair with removing a chair from a row. A rest leaves the timing place available but silent. Deleting the token changes how the remaining sequence is divided. When designing a sparse half-time groove, preserve the grid first and choose which places to leave quiet."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Four slots remain. Kick begins on counted beat 1 and snare on beat 3 under our four-beat convention. There are no new hits on beats 2 and 4; a previous sound may still have a tail. The optional audio is a plain click model of these onset times, not Strudel’s engine or drum samples.",
+      "code": "s(\"bd ~ sd ~\").gain(0.3)",
+      "beats": [
+        0,
+        2
+      ],
+      "bpm": 120,
+      "beatsPerBar": 4,
+      "barCount": 1
+    },
+    "practice": {
+      "question": "Which change removes the final hat from bd hh sd hh without shifting the other three starts?",
+      "options": [
+        "bd hh sd",
+        "bd hh sd ~",
+        "bd sd hh",
+        "bd*3"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Three equal slots would move the second and third starts.",
+        "The fourth slot stays in place as a rest.",
+        "This deletes a slot and also changes the order.",
+        "Repeating the kick does not preserve the original sounds."
+      ]
+    },
+    "tryIt": "Make an eight-slot rhythm with exactly three hits. Clap its silent slots internally. Explain why a rest does not necessarily cut off an earlier sound.",
+    "terms": [
+      "rest",
+      "onset",
+      "half-time"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/first-sounds/"
+    ],
+    "glossary": {
+      "rest": "A time slot with no new event; it need not silence an earlier sound’s tail.",
+      "onset": "The start of a musical event.",
+      "half-time": "A rhythmic feel with a broader backbeat, often a snare on beat 3 of a four-beat bar."
+    }
+  },
+  {
+    "id": "s05",
+    "title": "Brackets divide one slot",
+    "unit": "2 · Rhythm you can predict",
+    "level": "Beginner",
+    "prerequisites": [
+      "s04"
+    ],
+    "goal": "Use a subdivision without disturbing the outer pulse.",
+    "explain": [
+      "Square brackets group a smaller sequence inside one outer slot. Read the outer row first, then zoom into the bracketed slot. This is a rhythmic map: the big boxes keep their size while the small boxes share one of them.",
+      "The useful production question is not merely how many hits exist, but where they begin. A quick pair near the end of a phrase can lead into the next downbeat while the kick stays stable. Predict those start positions before adding more brackets; deeply nested patterns are harder to hear and debug."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The first three outer slots begin at 0, 1/4, and 1/2 of the cycle. The last slot starts at 3/4 and contains hats at 3/4 and 7/8. The optional audio is a plain click model of these onset times, not Strudel’s engine or drum samples.",
+      "code": "s(\"bd ~ sd [hh hh]\").gain(0.3)",
+      "beats": [
+        0,
+        2,
+        3,
+        3.5
+      ],
+      "bpm": 120,
+      "beatsPerBar": 4,
+      "barCount": 1
+    },
+    "practice": {
+      "question": "Where does the second hat begin?",
+      "options": [
+        "3/4 of the cycle",
+        "7/8 of the cycle",
+        "After the cycle ends",
+        "1/2 of the cycle"
+      ],
+      "answer": 1,
+      "feedback": [
+        "That is the first hat start.",
+        "The last quarter is split in half; its second half begins at 7/8.",
+        "Both hats fit inside the final quarter.",
+        "That is the snare start."
+      ]
+    },
+    "tryIt": "Replace the final pair with three hats. Sketch their positions inside the last quarter rather than spreading them over the whole cycle.",
+    "terms": [
+      "subdivision",
+      "square brackets"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "subdivision": "A smaller division of a beat or other time slot.",
+      "square brackets": "Inside mini-notation, brackets group events into one outer time slot; outside strings they can form JavaScript arrays."
+    }
+  },
+  {
+    "id": "s06",
+    "title": "Alternate across cycles",
+    "unit": "2 · Rhythm you can predict",
+    "level": "Beginner",
+    "prerequisites": [
+      "s05"
+    ],
+    "goal": "Build a longer phrase with angle brackets.",
+    "explain": [
+      "Angle brackets choose successive items on successive cycles. This lets a short loop have a changing detail. Keep a notebook with a row for each cycle: it is much easier to reason about a four-cycle phrase when you can see which choice belongs to each row.",
+      "Use variation to create a question and an answer. For example, the first ending can remain quiet and the next can add a hat. Repetition helps listeners recognize the idea; one changed ending helps them hear the phrase boundary. More different material is not automatically a better phrase."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "In the first cycle, the final slot is silent. In the second, it has a hat. The third returns to silence. The kick and snare positions do not move.",
+      "code": "s(\"bd ~ sd <~ hh>\").gain(0.3)"
+    },
+    "practice": {
+      "question": "What happens on cycle 3 when counting the first cycle as cycle 1?",
+      "options": [
+        "The final slot is silent",
+        "The tempo doubles",
+        "The final slot is a hat",
+        "The whole pattern stops"
+      ],
+      "answer": 0,
+      "feedback": [
+        "The choices are silence, hat, silence, hat…",
+        "Angle brackets choose items; they do not change the global clock.",
+        "The two-choice alternation returns to its first choice on cycle 3.",
+        "Alternation repeats rather than stopping."
+      ]
+    },
+    "tryIt": "Make a four-cycle ending with three rests and one two-hat fill. Write the four choices before coding them.",
+    "terms": [
+      "alternation",
+      "angle brackets",
+      "phrase"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "alternation": "Taking turns between pattern choices over successive cycles.",
+      "angle brackets": "Mini-notation < > grouping that advances through its items across cycles.",
+      "phrase": "A musical thought spanning a group of events or bars."
+    }
+  },
+  {
+    "id": "s07",
+    "title": "Repeat locally, not everywhere",
+    "unit": "2 · Rhythm you can predict",
+    "level": "Beginner",
+    "prerequisites": [
+      "s06"
+    ],
+    "goal": "Distinguish a repeated slot from a faster whole pattern.",
+    "explain": [
+      "The * symbol repeats its target inside that target’s allotted time. Parentheses and brackets decide what a change applies to. If only one hat token is repeated, the kick and snare need not move. If a whole group is repeated, every event in that group is packed more tightly.",
+      "This is useful for a fill: make one small area busier while preserving the listener’s sense of the bar. Read the scope of a change aloud. Say “three hats in the last slot,” not just “times three.” That wording catches mistakes before you press Play."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Three hats share the final quarter-cycle. The kick remains at the start and the snare remains halfway through. The optional audio is a plain click model of these onset times, not Strudel’s engine or drum samples.",
+      "code": "s(\"bd ~ sd hh*3\").gain(0.3)",
+      "beats": [
+        0,
+        2,
+        3,
+        3.3333333333333335,
+        3.6666666666666665
+      ],
+      "bpm": 120,
+      "beatsPerBar": 4,
+      "barCount": 1
+    },
+    "practice": {
+      "question": "Which pattern repeats the entire four-slot phrase twice in one cycle?",
+      "options": [
+        "s(\"bd ~ sd ~\")",
+        "s(\"bd ~ sd hh*2\")",
+        "s(\"[bd ~ sd hh]*2\")",
+        "s(\"bd ~ sd <hh hh>\")"
+      ],
+      "answer": 2,
+      "feedback": [
+        "This removes the hat; it does not repeat the phrase.",
+        "Only the final hat slot repeats.",
+        "The brackets make the whole phrase the target of *2.",
+        "Angle brackets alternate the final choice across cycles."
+      ]
+    },
+    "tryIt": "Compare the two *2 versions above outside the app. First tap where the snares should start in each version, then listen to check.",
+    "terms": [
+      "repetition",
+      "scope",
+      "multiplication"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "repetition": "Presenting an event or phrase again; its timing depends on the operation used.",
+      "scope": "The part of an expression that an operation applies to.",
+      "multiplication": "The mini-notation * operator, which repeats its target inside the available time."
+    }
+  },
+  {
+    "id": "s08",
+    "title": "Tempo and density are different",
+    "unit": "2 · Rhythm you can predict",
+    "level": "Beginner",
+    "prerequisites": [
+      "s07"
+    ],
+    "goal": "Choose global tempo or a local time transformation deliberately.",
+    "explain": [
+      "Global tempo controls the shared cycle clock. fast(2) makes one pattern run through its material twice as quickly relative to that clock. slow(2) gives its material twice as much cycle time. Other layers need not change when one layer is transformed. In setcpm(120/4), the slash outside quotes means divide: 120 beats per minute divided by four beats per cycle gives 30 cycles per minute.",
+      "Imagine dancers sharing a song: one can take twice as many steps without the song speeding up. This difference matters when moving between a DAW’s project tempo and note-repeat tools. A faster hat pattern may increase energy while the kick still tells you the same beat."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The four-slot source now spans two cycles. At this tempo, that is four seconds. The global cycle clock still runs at 30 cycles per minute.",
+      "code": "setcpm(120/4)\ns(\"bd ~ sd ~\").slow(2).gain(0.3)"
+    },
+    "practice": {
+      "question": "You want only the hats to become denser while the kick keeps its pace. Which is the best tool?",
+      "options": [
+        "Double setcpm for everything",
+        "Apply fast(2) only to the hat pattern",
+        "Apply slow(2) only to the hats",
+        "Double the speaker volume"
+      ],
+      "answer": 1,
+      "feedback": [
+        "That speeds every layer sharing the clock.",
+        "A local time transform changes the hat layer relative to the same clock.",
+        "That makes the hats sparser instead.",
+        "Loudness does not set rhythmic density."
+      ]
+    },
+    "tryIt": "Write a prediction for fast(2), slow(2), and setcpm(60). Describe what would happen to an unchanged second layer in each case.",
+    "terms": [
+      "fast",
+      "slow",
+      "tempo",
+      "density"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/time-modifiers/"
+    ],
+    "glossary": {
+      "fast": "Runs a pattern faster by a factor relative to the shared cycle clock.",
+      "slow": "Stretches a pattern across more cycle time by a factor.",
+      "tempo": "The speed of the musical clock; state whether you mean beats or cycles per minute.",
+      "density": "How many events occupy a given time span; not the same as global tempo."
+    }
+  },
+  {
+    "id": "s09",
+    "title": "Stack independent layers",
+    "unit": "3 · Build a playable groove",
+    "level": "Beginner",
+    "prerequisites": [
+      "s08"
+    ],
+    "goal": "Combine patterns without losing control of each part.",
+    "explain": [
+      "stack plays patterns together. Each item can keep its own rhythm, sound, and level. Think of the items as separate instrument parts on the same timeline, not as notes forced into one shared sequence. In this JavaScript call, commas outside the quotes separate the pattern arguments. Each opening parenthesis must have a matching closing parenthesis.",
+      "Give each part a job. A kick may anchor the pulse, a snare mark a broad backbeat, and hats reveal subdivisions. Start with two parts. Listen for what the second adds before adding a third. If every layer fills every gap, the groove may lose the breathing room that made it clear."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Under a four-beat cycle, the kick begins on beat 1, the snare on beat 3, and eight hats divide the bar into eighth-note positions. This is an original sparse half-time starting point, not a recreated recording.",
+      "code": "stack(\n  s(\"bd ~ ~ ~\").gain(0.35),\n  s(\"~ ~ sd ~\").gain(0.25),\n  s(\"hh*8\").gain(0.12)\n)"
+    },
+    "practice": {
+      "question": "Why put gain on each item inside stack?",
+      "options": [
+        "It lets you balance the parts separately",
+        "It makes the samples copyright-free",
+        "It automatically masters the mix",
+        "It changes each part’s cycle duration"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Quiet hats can support rather than cover the kick and snare.",
+        "Licensing is independent of gain settings.",
+        "Balancing a few layers is not a mastering process.",
+        "Gain controls level, not timing."
+      ]
+    },
+    "tryIt": "Remove the hats, listen to the two-part groove, then restore them. Describe their job in one sentence before changing their rhythm.",
+    "terms": [
+      "stack",
+      "layer",
+      "backbeat",
+      "gain"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/factories/"
+    ],
+    "glossary": {
+      "stack": "Combines multiple patterns so they play alongside one another.",
+      "layer": "One musical part playing alongside other parts.",
+      "backbeat": "An accented drum placement that helps establish the groove’s larger pulse.",
+      "gain": "A level multiplier for the sound, not a measure of musical energy or quality."
+    }
+  },
+  {
+    "id": "s10",
+    "title": "Accent makes a hierarchy",
+    "unit": "3 · Build a playable groove",
+    "level": "Beginner",
+    "prerequisites": [
+      "s09"
+    ],
+    "goal": "Use changing level to make some events feel more important.",
+    "explain": [
+      "An accent is emphasis. You can emphasize a hit by making it louder, longer, brighter, or less crowded. Here we change only level so you can isolate that one cause. gain accepts a pattern of values, so a repeated sound need not have identical strength each time.",
+      "The goal is a readable pulse, not maximum loudness. Imagine saying a sentence with every word equally stressed: it becomes tiring. Rhythmic accents work similarly. Keep the overall level modest and compare versions at similar listening volume; louder often seems better even when the musical shape is unchanged."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The eight gain values line up with eight hats. Hats 1 and 5 are stronger than their neighbors, making two broad groups audible.",
+      "code": "s(\"hh*8\").gain(\"0.22 0.08 0.12 0.08 0.18 0.08 0.12 0.08\")"
+    },
+    "practice": {
+      "question": "You want the second hat quieter without changing its start. What should you edit?",
+      "options": [
+        "The number of hat events",
+        "The sound name on every event",
+        "The second gain value",
+        "The global tempo"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Changing event count changes the subdivisions.",
+        "Changing sound is a different kind of contrast.",
+        "The second value changes that event’s emphasis while keeping the rhythm.",
+        "Tempo moves every start in real time."
+      ]
+    },
+    "tryIt": "Make two accent versions of the same eight hats. Explain the grouping you expect to hear before comparing them.",
+    "terms": [
+      "accent",
+      "gain",
+      "dynamic"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/first-effects/"
+    ],
+    "glossary": {
+      "accent": "Emphasis that makes one event stand out from its neighbors.",
+      "gain": "A level multiplier for the sound, not a measure of musical energy or quality.",
+      "dynamic": "A level or loudness relationship in a performance or pattern."
+    }
+  },
+  {
+    "id": "s11",
+    "title": "Share rhythm with struct",
+    "unit": "3 · Build a playable groove",
+    "level": "Beginner",
+    "prerequisites": [
+      "s10"
+    ],
+    "goal": "Apply one onset plan to different musical material.",
+    "explain": [
+      "struct supplies a pattern of hit positions. In its string, x marks an onset and ~ leaves a gap. Separating rhythm from pitch or sound makes it easier to ask which ingredient creates the character you hear.",
+      "A useful experiment is to keep the rhythm and change the instrument, then keep the instrument and change the rhythm. If both change together, you cannot tell which caused your reaction. A shared rhythmic idea can also connect a bass phrase with a drum fill without making their pitches or timbres identical."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The bass-drum sound is triggered at cycle start, halfway, and seven-eighths. The final bracket places the last hit in the second half of the final quarter.",
+      "code": "s(\"bd\").struct(\"x ~ x [~ x]\").gain(0.2)"
+    },
+    "practice": {
+      "question": "Which edit keeps the onset plan but changes the sound?",
+      "options": [
+        "Add fast(2)",
+        "Replace bd with hh",
+        "Remove struct",
+        "Change x ~ x [~ x] to x*8"
+      ],
+      "answer": 1,
+      "feedback": [
+        "That changes timing density.",
+        "The sound changes from bass drum to hi-hat while the struct string stays the same.",
+        "Removing the structure removes this onset plan.",
+        "That replaces the rhythm with eight regular triggers."
+      ]
+    },
+    "tryIt": "Use the same struct string first on bd and then on hh. Tap the shared rhythm even though the sound changes. Later, after learning note(), try this idea with a pitched synth.",
+    "terms": [
+      "struct",
+      "onset",
+      "rhythm"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/conditional-modifiers/"
+    ],
+    "glossary": {
+      "struct": "Applies a supplied onset structure to musical values.",
+      "onset": "The start of a musical event.",
+      "rhythm": "The organization of events and gaps in time."
+    }
+  },
+  {
+    "id": "s12",
+    "title": "Euclidean rhythms need a frame",
+    "unit": "3 · Build a playable groove",
+    "level": "Beginner",
+    "prerequisites": [
+      "s11"
+    ],
+    "goal": "Distribute a chosen number of hits across a fixed number of slots.",
+    "explain": [
+      "An Euclidean rhythm spreads a number of hits as evenly as possible across a chosen number of slots. euclid(3,8) means three hits distributed through eight slots. The gaps cannot all be identical because eight does not divide evenly by three.",
+      "A mathematical rhythm is raw material, not a finished groove. Listen against a steady reference so you can judge where its accents land. Keep the frame stable while changing the hit count. This turns a mysterious-looking formula into a comparison you can count and hear."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Four regular kicks provide the reference. Three hats are spread across an eight-slot grid within the same cycle. Both layers still share the cycle boundary.",
+      "code": "stack(\n  s(\"bd*4\").gain(0.2),\n  s(\"hh\").euclid(3,8).gain(0.12)\n)"
+    },
+    "practice": {
+      "question": "Which change makes the hat pattern denser but preserves its eight-slot frame?",
+      "options": [
+        "euclid(3,16)",
+        "euclid(5,8)",
+        "slow(2)",
+        "setcpm(15)"
+      ],
+      "answer": 1,
+      "feedback": [
+        "The slot frame changes to sixteen while the hit count stays three.",
+        "Five hits instead of three occupy the same eight-slot grid.",
+        "This stretches the pattern in time.",
+        "This slows the shared clock."
+      ]
+    },
+    "tryIt": "Compare 3 of 8, 5 of 8, and 7 of 8 against the same kick. Describe the change in space rather than calling one version automatically better.",
+    "terms": [
+      "euclid",
+      "Euclidean rhythm",
+      "pulse"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/time-modifiers/"
+    ],
+    "glossary": {
+      "euclid": "Distributes a chosen number of hits across a chosen number of slots.",
+      "Euclidean rhythm": "A pattern that spreads hits as evenly as possible across a slot count.",
+      "pulse": "A regular timing reference you can tap or count."
+    }
+  },
+  {
+    "id": "s13",
+    "title": "Name a pitch, choose an octave",
+    "unit": "4 · Pitch and harmony in code",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s12"
+    ],
+    "goal": "Read note names separately from sound choices.",
+    "explain": [
+      "note selects pitch. A label such as d3 contains a note name, D, and an octave number, 3. d4 has the same note name one octave higher. s selects the instrument that plays the note. A melody can keep its pitches while you change its sound.",
+      "Use explicit octave numbers while learning. Low, middle, and high registers do different jobs in an arrangement, and a letter without its register leaves more to the environment’s defaults. You can also use MIDI note numbers: adding 12 moves up one octave. This is a pitch numbering system, not an instruction to connect a MIDI device."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The phrase rises D–F–A and returns to F. Each pitch gets one quarter-cycle. The triangle sound stays the same throughout.",
+      "code": "note(\"d3 f3 a3 f3\").s(\"triangle\").gain(0.2)"
+    },
+    "practice": {
+      "question": "Which edit moves only the first pitch up one octave?",
+      "options": [
+        "d3 → e3",
+        "triangle → sine",
+        "gain(0.2) → gain(0.4)",
+        "d3 → d4"
+      ],
+      "answer": 3,
+      "feedback": [
+        "That changes the note name, not by an octave.",
+        "That changes timbre, not the written pitch.",
+        "That changes level.",
+        "The letter stays D and the octave number rises by one."
+      ]
+    },
+    "tryIt": "Write a four-note phrase using explicit octave numbers. Sing or imagine its up/down contour, then test it outside this app.",
+    "terms": [
+      "note",
+      "octave",
+      "MIDI note",
+      "register"
+    ],
+    "sources": [
+      "https://strudel.cc/understand/pitch/"
+    ],
+    "glossary": {
+      "note": "Sets pitch using note names or MIDI note numbers.",
+      "octave": "A pitch interval whose higher frequency is twice the lower frequency.",
+      "MIDI note": "A numbered pitch representation; adding 12 moves up an octave in the usual system.",
+      "register": "The low, middle, or high pitch region where a part lives."
+    }
+  },
+  {
+    "id": "s14",
+    "title": "Scale degrees are numbered steps",
+    "unit": "4 · Pitch and harmony in code",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s13"
+    ],
+    "goal": "Predict how n and scale turn numbers into pitches.",
+    "explain": [
+      "A scale is an ordered pitch collection. With n and scale, numbers choose positions in that collection, beginning at 0. In C major, 0 selects C, 1 selects D, and 2 selects E. These are scale steps, not semitone distances.",
+      "Context matters: n is also used for sample selection when no scale conversion is involved. Do not memorize n as meaning only “note.” Read its neighbors. In the example, scale tells you that the numbers are being interpreted musically as degrees. This lets a melodic shape move between keys without rewriting every letter."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The degrees become C4, E4, G4, D4. Degree 2 means the third item because counting begins at zero.",
+      "code": "n(\"0 2 4 1\").scale(\"C4:major\").s(\"triangle\").gain(0.2)"
+    },
+    "practice": {
+      "question": "In this C-major example, what pitch does degree 1 select?",
+      "options": [
+        "C5",
+        "The second drum sample",
+        "C-sharp4",
+        "D4"
+      ],
+      "answer": 3,
+      "feedback": [
+        "The next C is an octave away.",
+        "Here scale converts the numbers to pitch degrees.",
+        "That would be one semitone above C, not one major-scale step.",
+        "The second scale item is D, and its zero-based index is 1."
+      ]
+    },
+    "tryIt": "Predict degrees 0, 3, 4, 2 in C major. Then change only the scale root to D4 and compare the same shape in a new key.",
+    "terms": [
+      "n",
+      "scale",
+      "scale degree",
+      "zero-based index"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/first-notes/"
+    ],
+    "glossary": {
+      "n": "A numeric control whose meaning depends on context, such as sample index or scale degree.",
+      "scale": "An ordered pitch collection, or the function mapping degree numbers into that collection.",
+      "scale degree": "A position in a scale; Strudel’s degree indexing starts at 0.",
+      "zero-based index": "A list position counted from 0 rather than 1."
+    }
+  },
+  {
+    "id": "s15",
+    "title": "A comma can mean together",
+    "unit": "4 · Pitch and harmony in code",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s14"
+    ],
+    "goal": "Distinguish musical polyphony from JavaScript argument separators.",
+    "explain": [
+      "Inside mini-notation, a comma layers simultaneous material. note(\"d3,f3,a3\") creates a D-minor triad rather than a three-note melody. Polyphony means multiple notes can sound at once.",
+      "Outside the quotes, commas have a different job: they separate JavaScript arguments, such as the separate patterns passed to stack. The location of punctuation matters. Square brackets around each chord keep a sequence of chords clearly grouped. Read the outside structure first, then the miniature pattern inside each quoted string."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The three D-minor notes begin together for one cycle; the three C-major notes begin together for the next. Low per-note gain leaves room for multiple voices.",
+      "code": "note(\"<[d3,f3,a3] [c3,e3,g3]>\").s(\"triangle\").gain(0.12)"
+    },
+    "practice": {
+      "question": "What is the main difference between \"d3 f3 a3\" and \"d3,f3,a3\" inside note?",
+      "options": [
+        "The comma raises every pitch an octave",
+        "The second changes the tempo",
+        "The second layers the pitches instead of sequencing them",
+        "The first is always louder"
+      ],
+      "answer": 2,
+      "feedback": [
+        "A comma does not change pitch register.",
+        "The cycle clock is unchanged.",
+        "Spaces sequence; commas layer inside mini-notation.",
+        "Loudness depends on levels and overlapping sounds."
+      ]
+    },
+    "tryIt": "Write a sequence of two different triads with commas inside each chord. Explain every comma and bracket aloud before playing.",
+    "terms": [
+      "polyphony",
+      "chord",
+      "comma"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "polyphony": "Multiple pitches or voices sounding at once.",
+      "chord": "A group of pitches understood together; chord() supplies harmonic symbols in Strudel.",
+      "comma": "Inside mini-notation, a layering separator; outside strings, often a separator between JavaScript arguments."
+    }
+  },
+  {
+    "id": "s16",
+    "title": "Chord symbols need a voicing",
+    "unit": "4 · Pitch and harmony in code",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s15"
+    ],
+    "goal": "Turn harmonic names into an audible register choice.",
+    "explain": [
+      "A chord symbol names a harmony without specifying every octave. chord supplies those symbols; voicing turns them into playable notes using Strudel’s tonal helpers. The singular function is voicing(), not the older plural voicings name you may see elsewhere.",
+      "The same harmony can sound close, wide, high, or low. A helper’s first choice is not a verdict on what your track needs. Listen for smooth movement and room for the bass. If a helper is unavailable in a custom setup, explicit note chords are a clear fallback; package availability is separate from whether your harmonic idea makes sense."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Each symbol lasts one cycle. Dm means D minor; Bb means B-flat major. The helper chooses pitches for each named harmony. This is an original common harmonic exercise, not a song quotation.",
+      "code": "chord(\"<Dm Bb F C>\").voicing().s(\"triangle\").gain(0.12)"
+    },
+    "practice": {
+      "question": "Why might you replace a generated voicing with explicit note names?",
+      "options": [
+        "To choose exact registers and spacing",
+        "Because chord symbols always specify one octave",
+        "Because voicing changes the project tempo",
+        "Because minor chords cannot be coded"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Explicit notes let you control exactly which octave each voice occupies.",
+        "A symbol usually leaves octave placement open.",
+        "Voicing is about pitch layout, not global tempo.",
+        "Both explicit notes and chord helpers can represent minor harmony."
+      ]
+    },
+    "tryIt": "Write the pitches D–F–A in two different octave layouts. Compare their clarity above a low D bass note.",
+    "terms": [
+      "chord",
+      "voicing",
+      "register",
+      "tonal helper"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/tonal/"
+    ],
+    "glossary": {
+      "chord": "A group of pitches understood together; chord() supplies harmonic symbols in Strudel.",
+      "voicing": "The particular pitches and octaves used for a chord; voicing() converts chord symbols into notes.",
+      "register": "The low, middle, or high pitch region where a part lives.",
+      "tonal helper": "A utility that works with musical names, scales, intervals, or chords."
+    }
+  },
+  {
+    "id": "s17",
+    "title": "Timbre is not melody",
+    "unit": "5 · Sound shape and movement",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s16"
+    ],
+    "goal": "Change tone color while holding the musical pattern steady.",
+    "explain": [
+      "Timbre is the quality that helps you tell two sounds apart even when they play the same pitch. Basic synth waveforms provide useful starting colors: sine is simple and smooth; sawtooth and square have more upper-frequency content. These are starting materials, not complete genre presets.",
+      "For a fair comparison, hold pitch, rhythm, and level as steady as you can. A bright sound can seem louder than a softer one at the same gain. The aim is to identify what changed, not to declare a waveform “better.” Synthwave, dubstep, and classical-inspired writing can all benefit from choosing a sound that serves a musical role."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The phrase repeats while the waveform changes each cycle. Listen for color changing, not a different sequence of note names.",
+      "code": "note(\"d3 ~ a3 f3\").s(\"<sine triangle sawtooth square>\").gain(0.12)"
+    },
+    "practice": {
+      "question": "If the melody is hard to hear because a bass sound is too bright, which experiment isolates timbre?",
+      "options": [
+        "Keep the phrase and compare a softer waveform",
+        "Double the tempo",
+        "Raise all gains",
+        "Rewrite every note and rhythm"
+      ],
+      "answer": 0,
+      "feedback": [
+        "The musical pattern stays fixed while sound color changes.",
+        "Tempo tests pacing, not primarily timbre.",
+        "Higher levels can worsen masking and are not a timbre comparison.",
+        "That changes several causes at once."
+      ]
+    },
+    "tryIt": "Compare sine and sawtooth at a comfortable low level. Describe the difference without using only louder or quieter.",
+    "terms": [
+      "timbre",
+      "sine",
+      "sawtooth",
+      "waveform"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/synths/"
+    ],
+    "glossary": {
+      "timbre": "Sound color: what distinguishes sources beyond their pitch and loudness.",
+      "sine": "Without quotes, a control signal; inside s(\"sine\"), an audible oscillator choice.",
+      "sawtooth": "A bright, harmonically rich oscillator waveform available as a synth sound.",
+      "waveform": "The repeating shape of an oscillation, associated with a sound’s harmonic content."
+    }
+  },
+  {
+    "id": "s18",
+    "title": "An envelope draws a sound’s life",
+    "unit": "5 · Sound shape and movement",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s17"
+    ],
+    "goal": "Shape the start and fade of a synth note.",
+    "explain": [
+      "An amplitude envelope controls level over a note’s life. Attack is the rise at the start. Decay moves toward a sustain level. Release is the fade after the note is released. Sustain is a level, not a time. These controls describe a shape rather than a new melody.",
+      "A short percussive note leaves different space than a long pad. For this experiment, keep the rhythm fixed and choose a nearly immediate attack, a brief decay, and no sustained plateau. Listen for whether the tail leaves room before the next onset. Exact audible length also depends on event duration and the sound source."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The four notes keep their written start times. The envelope makes each note more plucked than a sustained organ-like tone.",
+      "code": "note(\"d3 f3 a3 c4\").s(\"triangle\")\n.attack(0.01).decay(0.18).sustain(0).release(0.08).gain(0.2)"
+    },
+    "practice": {
+      "question": "Which setting is a level rather than a duration?",
+      "options": [
+        "sustain",
+        "release",
+        "attack",
+        "decay"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Sustain is the level held during the sustained stage.",
+        "Release describes a fade time after release.",
+        "Attack describes a rise time.",
+        "Decay describes a time moving toward the sustained level."
+      ]
+    },
+    "tryIt": "Change only attack from 0.01 to 0.2. Predict how the same rhythmic starts might feel softer or less sharply defined.",
+    "terms": [
+      "envelope",
+      "attack",
+      "decay",
+      "sustain",
+      "release"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/effects/"
+    ],
+    "glossary": {
+      "envelope": "A changing control shape over a sound’s life, such as its rise and fade.",
+      "attack": "The envelope’s initial rise time.",
+      "decay": "The envelope’s time moving from its peak toward its sustain level.",
+      "sustain": "The envelope’s maintained level, not a duration.",
+      "release": "The fade time after a note’s release; in music more broadly, a reduction of tension."
+    }
+  },
+  {
+    "id": "s19",
+    "title": "A filter changes brightness",
+    "unit": "5 · Sound shape and movement",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s18"
+    ],
+    "goal": "Use a low-pass cutoff without confusing it with pitch.",
+    "explain": [
+      "A low-pass filter allows lower frequencies through more readily than higher ones. lpf sets its cutoff in hertz. Lowering the cutoff generally softens a harmonically rich sound. It does not rewrite the note names in your pattern.",
+      "This is a useful first sound-design move because it is easy to hear on a sawtooth. It is less dramatic on a low sine wave that has little high-frequency content to remove. Choose a source that can demonstrate the idea. Keep resonance and distortion out of this first comparison so the cause stays clear."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The pitch is D3 throughout. Alternating cutoff values make neighboring notes darker and brighter while their written pitches stay fixed.",
+      "code": "note(\"d3*4\").s(\"sawtooth\").lpf(\"400 1600 400 1600\").gain(0.12)"
+    },
+    "practice": {
+      "question": "What does changing lpf(1600) to lpf(400) mainly aim to do here?",
+      "options": [
+        "Lengthen the cycle",
+        "Transpose D3 to D2",
+        "Reduce upper-frequency content",
+        "Double the number of notes"
+      ],
+      "answer": 2,
+      "feedback": [
+        "The filter is not a cycle-duration setting.",
+        "The pitch command remains D3.",
+        "A lower cutoff removes more high-frequency energy from this rich waveform.",
+        "The note count is still four."
+      ]
+    },
+    "tryIt": "Compare two cutoffs on sawtooth, then on sine at the same note. Explain why the difference may be less obvious on sine.",
+    "terms": [
+      "lpf",
+      "cutoff",
+      "low-pass filter",
+      "hertz"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/first-effects/"
+    ],
+    "glossary": {
+      "lpf": "A low-pass filter control whose cutoff is specified in hertz.",
+      "cutoff": "A filter’s transition frequency, around which attenuation changes.",
+      "low-pass filter": "A filter that attenuates higher frequencies more than lower ones.",
+      "hertz": "Cycles of oscillation per second, abbreviated Hz."
+    }
+  },
+  {
+    "id": "s20",
+    "title": "A signal turns a control knob",
+    "unit": "5 · Sound shape and movement",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s19"
+    ],
+    "goal": "Separate a changing number from an audible oscillator.",
+    "explain": [
+      "sine without quotes is a control signal: a changing stream of numbers. s(\"sine\") selects an audible synth waveform. They share a mathematical shape, but they do different jobs. A signal can steer a filter, pan, or other parameter instead of becoming a sound.",
+      "range maps the signal’s values into useful limits. slow stretches its movement in cycle time. In this lesson the signal is sampled by the repeated note events, so each new event receives a changing cutoff. Do not describe this example as proving that one held note’s filter sweeps continuously."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Eight notes per cycle supply listening points. Their filter settings follow a gentle four-cycle rise and fall between the chosen bounds.",
+      "code": "note(\"d3*8\").s(\"sawtooth\")\n.lpf(sine.range(350,1800).slow(4)).gain(0.1)"
+    },
+    "practice": {
+      "question": "Which part sets the range of filter values?",
+      "options": [
+        "s(\"sawtooth\")",
+        "range(350,1800)",
+        "gain(0.1)",
+        "note(\"d3*8\")"
+      ],
+      "answer": 1,
+      "feedback": [
+        "That selects the sound source.",
+        "The two numbers define the low and high control values.",
+        "Gain controls level.",
+        "That supplies pitch and event rhythm."
+      ]
+    },
+    "tryIt": "Draw the expected cutoff contour over four cycles. Change slow(4) to slow(2) and predict how quickly the contour repeats.",
+    "terms": [
+      "signal",
+      "sine",
+      "range",
+      "modulation"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/signals/"
+    ],
+    "glossary": {
+      "signal": "A time-varying value stream, which can steer a parameter instead of making sound.",
+      "sine": "Without quotes, a control signal; inside s(\"sine\"), an audible oscillator choice.",
+      "range": "Maps a numeric signal into chosen lower and upper limits.",
+      "modulation": "Changing one parameter using another varying process."
+    }
+  },
+  {
+    "id": "s21",
+    "title": "Samples are recordings, not numbers",
+    "unit": "6 · Transform with intention",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s20"
+    ],
+    "goal": "Distinguish selecting a sample from setting a pitch.",
+    "explain": [
+      "A sample is a recorded sound. A named collection can contain several recordings, indexed from zero. s(\"hh:1\") selects item 1 from a hi-hat collection if that item is available. n can also select sample indices when used with a sample sound rather than a scale.",
+      "Changing the sample index can change the recording itself. Changing playback speed changes how one recording is read, often changing both its pitch and duration. Neither should be confused with choosing a scale degree. Availability and licensing belong to the actual sound collection; a short command does not grant permission to redistribute a recording."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This alternates two sample indices, not two musical scale notes. If your loaded hh collection differs, the recordings or available indices may differ too.",
+      "code": "n(\"0 1 0 1\").s(\"hh\").gain(0.15)"
+    },
+    "practice": {
+      "question": "Why does n(\"0 1\") mean something different here than before scale(\"C4:major\")?",
+      "options": [
+        "The surrounding controls determine how its values are used",
+        "All sample indices are musical notes",
+        "Quotes turn recordings into synthesizers",
+        "n always chooses the global tempo"
+      ],
+      "answer": 0,
+      "feedback": [
+        "A sample sound uses indices; scale converts degrees into pitches.",
+        "An index selects a file in a collection.",
+        "Quotes identify text; they do not change the kind of sound source.",
+        "n does not set the cycle clock."
+      ]
+    },
+    "tryIt": "Check the external editor’s sound list before selecting an index. Use only sounds you have the right to use in a released project.",
+    "terms": [
+      "sample",
+      "n",
+      "index",
+      "sample collection"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/samples/"
+    ],
+    "glossary": {
+      "sample": "A recording used as sound material.",
+      "n": "A numeric control whose meaning depends on context, such as sample index or scale degree.",
+      "index": "A position used to select an item from a collection.",
+      "sample collection": "A named set of recordings available to the sampler."
+    }
+  },
+  {
+    "id": "s22",
+    "title": "Reverse the order, not the recording",
+    "unit": "6 · Transform with intention",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s21"
+    ],
+    "goal": "Tell a pattern transformation from an audio effect.",
+    "explain": [
+      "rev reverses a pattern’s time structure. For a simple equally spaced four-note phrase, it puts the last note first. This is not the same task as playing each audio recording backward. Pattern transformations reorganize events; audio settings shape the sounds those events trigger.",
+      "A transformation is most useful when you know the original clearly. Start with a short recognizable contour, predict its reversal, and compare. If the transformed phrase is too unrelated to recognize, simplify the source before adding more transformations. Musical development needs some connection the listener can follow."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The original order D–F–A–E becomes E–A–F–D in this equal-slot example. The triangle oscillator itself is not a backward recording.",
+      "code": "note(\"d3 f3 a3 e3\").rev().s(\"triangle\").gain(0.2)"
+    },
+    "practice": {
+      "question": "What should you expect first from this code?",
+      "options": [
+        "A3",
+        "E3",
+        "D3",
+        "F3"
+      ],
+      "answer": 1,
+      "feedback": [
+        "A3 becomes the second item here.",
+        "The last source item becomes first in this simple reversal.",
+        "D3 was the first source item and becomes last here.",
+        "F3 moves later in the reversed sequence."
+      ]
+    },
+    "tryIt": "Write a five-note contour, then write its reverse without running the code. Check your prediction with one brief listen.",
+    "terms": [
+      "rev",
+      "transformation",
+      "contour"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/time-modifiers/"
+    ],
+    "glossary": {
+      "rev": "Reverses the time structure within cycles of a pattern, not the audio recording itself.",
+      "transformation": "A rule that changes an existing pattern’s values or time structure.",
+      "contour": "The up-and-down shape of a melody."
+    }
+  },
+  {
+    "id": "s23",
+    "title": "A callback is a small recipe",
+    "unit": "6 · Transform with intention",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s22"
+    ],
+    "goal": "Read x => x.fast(2) before using it inside another function.",
+    "explain": [
+      "Some functions need a recipe for changing a pattern, not a finished changed pattern. The expression x => x.fast(2) means: “take the pattern handed to me, call it x, and return it running twice as fast.” The arrow connects the input name to what you do with it.",
+      "x is just a temporary label. You could use p => p.fast(2) if you changed both names consistently. Parentheses on the outside function hold its arguments; a comma separates them. This is JavaScript syntax outside mini-notation, so do not put this arrow recipe inside the rhythm string. The // marks in the example begin comments: notes for a person to read, ignored when the code runs. That is why this reading example does not play sound."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The left x is the input label. The right x refers to that same input. .fast(2) is the transformation to return. This commented example is intentionally not a standalone sound pattern.",
+      "code": "// A callback recipe, shown alone for reading:\n// x => x.fast(2)\n// Next lesson puts it inside lastOf."
+    },
+    "practice": {
+      "question": "Which callback has the same meaning?",
+      "options": [
+        "x.fast(2) => x",
+        "p => p.fast(2)",
+        "p => x.fast(2)",
+        "\"x => x.fast(2)\""
+      ],
+      "answer": 1,
+      "feedback": [
+        "The arrow needs a valid input parameter on its left.",
+        "The label changed consistently on both sides.",
+        "The recipe introduces p but then refers to a different name.",
+        "Quotes make text, not this callable recipe."
+      ]
+    },
+    "tryIt": "Explain p => p.rev() in your own words. Identify its input label and returned transformation; no audio test is needed for this syntax-only lesson.",
+    "terms": [
+      "callback",
+      "arrow function",
+      "parameter",
+      "comment"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/pattern-effects/"
+    ],
+    "glossary": {
+      "callback": "A function supplied to another function as a recipe to apply later.",
+      "arrow function": "JavaScript syntax such as x => x.fast(2), describing an input and what to return.",
+      "parameter": "A named input in a function definition, or a controllable setting in sound design.",
+      "comment": "Text for a reader that is ignored during execution; // begins a comment lasting to the line’s end."
+    }
+  },
+  {
+    "id": "s24",
+    "title": "A predictable fill has a schedule",
+    "unit": "6 · Transform with intention",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s23"
+    ],
+    "goal": "Apply a transformation at the end of a repeated phrase.",
+    "explain": [
+      "lastOf(4, recipe) applies a recipe in the last cycle of each four-cycle group. It is a useful way to make a fill recur where a listener expects a phrase to turn. The other cycles retain the source pattern.",
+      "Build the schedule before complicating the fill. Count three steady cycles and one changed cycle. A denser last bar can point toward the next downbeat, but it should not erase that downbeat. Current official documentation teaches lastOf and firstOf; older tutorials may use other names, so check the reference rather than swapping names blindly."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The fourth cycle of the group runs the source twice within that cycle. The next four-cycle group returns to the same three-steady, one-dense plan.",
+      "code": "s(\"bd ~ sd hh\").lastOf(4, x => x.fast(2)).gain(0.25)"
+    },
+    "practice": {
+      "question": "What does the arrow recipe receive?",
+      "options": [
+        "The current pattern to transform",
+        "The number 4 as an audio waveform",
+        "The speaker volume",
+        "A string containing the whole web page"
+      ],
+      "answer": 0,
+      "feedback": [
+        "The callback transforms the pattern selected by lastOf.",
+        "The 4 sets the scheduling period, not a waveform.",
+        "The recipe is not a volume-control input.",
+        "This function operates on musical patterns."
+      ]
+    },
+    "tryIt": "Create a four-cycle phrase whose last cycle uses rev instead of fast. Predict the last cycle’s event order before playing.",
+    "terms": [
+      "lastOf",
+      "firstOf",
+      "callback",
+      "fill"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/conditional-modifiers/"
+    ],
+    "glossary": {
+      "lastOf": "Applies a callback in the last cycle of each specified group of cycles.",
+      "firstOf": "Applies a callback in the first cycle of each specified group of cycles.",
+      "callback": "A function supplied to another function as a recipe to apply later.",
+      "fill": "A brief rhythmic change that marks or leads toward a phrase boundary."
+    }
+  },
+  {
+    "id": "s25",
+    "title": "Chance is not a schedule",
+    "unit": "7 · From loops to sections",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s24"
+    ],
+    "goal": "Use variation without surrendering the musical anchor.",
+    "explain": [
+      "sometimes applies a transformation with a chance of one half. It does not mean exactly every other event. sometimesBy lets you choose the probability. Chance can make a repeated texture less rigid, but it cannot promise a fill on a particular bar.",
+      "Keep an important anchor deterministic while experimenting. A steady kick can make changing hats feel intentional. If a section needs an exact arrival, use a schedule such as lastOf instead of hoping randomness lands there. Probability describes likelihood over many opportunities, not a guarantee for the next few."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The base hat level is 0.15. The callback sometimes lowers it to 0.08. Keep the conditional gain last: a later unconditional gain setting could overwrite it.",
+      "code": "s(\"hh*8\").gain(0.15).sometimes(x => x.gain(0.08))"
+    },
+    "practice": {
+      "question": "You must have a fill on the fourth cycle. Which choice expresses that requirement?",
+      "options": [
+        "sometimesBy(0.25, ...)",
+        "lastOf(4, ...)",
+        "Make the hats louder",
+        "sometimes"
+      ],
+      "answer": 1,
+      "feedback": [
+        "A quarter probability is not a four-cycle schedule.",
+        "lastOf specifies the final cycle of each four-cycle group.",
+        "Level does not schedule a fill.",
+        "A chance operation cannot promise that location."
+      ]
+    },
+    "tryIt": "Try the example in external Strudel. Predict why two neighboring hats can both be quiet without the probability rule being broken.",
+    "terms": [
+      "sometimes",
+      "sometimesBy",
+      "probability",
+      "deterministic"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/random-modifiers/"
+    ],
+    "glossary": {
+      "sometimes": "Applies a transformation with a one-half probability, not a fixed every-other schedule.",
+      "sometimesBy": "Applies a transformation with the supplied probability.",
+      "probability": "The likelihood of an outcome, not a guarantee about the next few events.",
+      "deterministic": "Specified by a rule that does not make a fresh chance choice for the outcome in question."
+    }
+  },
+  {
+    "id": "s26",
+    "title": "Bass and drums can take turns",
+    "unit": "7 · From loops to sections",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s25"
+    ],
+    "goal": "Arrange low-frequency roles with rhythm before reaching for effects.",
+    "explain": [
+      "Two strong low sounds starting together may compete. One musical solution is to leave a gap for the kick and place bass answers between kick hits. This is arrangement: deciding what plays when. It is not the same as compression, equalization, or mastering.",
+      "Use a simple pitch first so rhythm is easy to hear. A short bass answer can support a half-time drum frame without filling every subdivision. Later, sound design may make the bass more complex, but the rhythmic conversation should still be understandable when the sound is plain."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The bass leaves the first slot empty for the kick. It answers on beat 2 and in the final beat, while the snare marks beat 3.",
+      "code": "stack(\n s(\"bd ~ ~ ~\").gain(0.3),\n s(\"~ ~ sd ~\").gain(0.2),\n note(\"~ d2 ~ [d2 a2]\").s(\"triangle\")\n .decay(0.16).sustain(0).gain(0.18)\n)"
+    },
+    "practice": {
+      "question": "Which design choice most directly creates room at the kick onset?",
+      "options": [
+        "Raise the bass by 12 dB",
+        "Double every pattern",
+        "Add reverb to every layer",
+        "Replace the first bass event with a rest"
+      ],
+      "answer": 3,
+      "feedback": [
+        "More level can increase competition.",
+        "Doubling can increase crowding.",
+        "Reverb adds a tail rather than removing the simultaneous onset.",
+        "A rest changes the arrangement so the bass does not start with that kick."
+      ]
+    },
+    "tryIt": "Write two bass versions: one sharing the kick onset and one answering it. Compare at low level and describe the rhythmic trade-off.",
+    "terms": [
+      "arrangement",
+      "bass",
+      "masking",
+      "rest"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/factories/"
+    ],
+    "glossary": {
+      "arrangement": "The placement and changing roles of musical parts over time.",
+      "bass": "A low-register musical part supporting rhythm and harmony.",
+      "masking": "One sound making another harder to hear because their energy competes.",
+      "rest": "A time slot with no new event; it need not silence an earlier sound’s tail."
+    }
+  },
+  {
+    "id": "s27",
+    "title": "Arrange lengths, not just loops",
+    "unit": "7 · From loops to sections",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s26"
+    ],
+    "goal": "Turn contrasting patterns into a timed sequence of sections.",
+    "explain": [
+      "arrange joins sections for chosen numbers of cycles. Each JavaScript array [length, pattern] is a two-item package: how long the section lasts and what plays there. These square brackets sit outside strings, so they are arrays, not mini-notation subdivisions.",
+      "Draw a timeline before coding. A two-cycle introduction followed by a four-cycle main idea makes a six-cycle form. Count the boundary, not just the events inside each loop. A small finished form is often a better learning project than an enormous loop with no beginning or contrast."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Two cycles of hats introduce the frame. Four cycles add the drum anchors and denser hats. The six-cycle arrangement then repeats.",
+      "code": "arrange(\n [2, s(\"hh*4\").gain(0.1)],\n [4, stack(s(\"bd ~ sd ~\").gain(0.25), s(\"hh*8\").gain(0.1))]\n)"
+    },
+    "practice": {
+      "question": "How long is one complete pass through this arrangement?",
+      "options": [
+        "8 cycles",
+        "2 cycles",
+        "4 cycles",
+        "6 cycles"
+      ],
+      "answer": 3,
+      "feedback": [
+        "The section lengths are added, not multiplied.",
+        "That counts only the introduction.",
+        "That counts only the second section.",
+        "2 + 4 gives a six-cycle form."
+      ]
+    },
+    "tryIt": "Design an eight-cycle timeline on paper with an introduction, main idea, and ending. Label each section’s cycle count before writing code.",
+    "terms": [
+      "arrange",
+      "array",
+      "section",
+      "form"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/factories/"
+    ],
+    "glossary": {
+      "arrange": "Sequences patterns for explicitly specified numbers of cycles.",
+      "array": "A JavaScript ordered collection written with square brackets outside a string.",
+      "section": "A span of music with a particular role, such as introduction or main idea.",
+      "form": "The larger order and lengths of musical sections."
+    }
+  },
+  {
+    "id": "s28",
+    "title": "Contrast can come from subtraction",
+    "unit": "7 · From loops to sections",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s27"
+    ],
+    "goal": "Create an arrival without making every control bigger.",
+    "explain": [
+      "Tension and release depend on expectation. If a pattern has established regular activity, a gap can make its return feel important. mask lets a pattern through where its controlling pattern is on and silences it where that control is off.",
+      "Try removing one layer before an arrival while keeping another reference steady. The listener can feel time continuing through the missing part. Adding more notes, brighter tone, and more volume all at once makes it difficult to know which change worked. Start with a single contrast and evaluate its musical purpose."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The hats disappear for the fourth cycle of each four-cycle group. The kick/snare frame remains, so the return of hats is audible as a textural change.",
+      "code": "stack(\n s(\"bd ~ sd ~\").gain(0.25),\n s(\"hh*8\").mask(\"<1 1 1 0>\").gain(0.12)\n)"
+    },
+    "practice": {
+      "question": "What does the 0 in this mask do?",
+      "options": [
+        "It selects sample index zero",
+        "It silences that part of the masked pattern",
+        "It resets the project tempo",
+        "It makes the hats an octave lower"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Inside mask, the value controls whether events pass.",
+        "The hats are withheld during the off cycle.",
+        "mask does not set the global clock.",
+        "This is not a pitch operation."
+      ]
+    },
+    "tryIt": "Make the same four-cycle phrase with hats always on, then with the final-cycle gap. Decide whether the return feels clearer and explain why.",
+    "terms": [
+      "mask",
+      "tension",
+      "release",
+      "contrast"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/conditional-modifiers/"
+    ],
+    "glossary": {
+      "mask": "Allows events through for on values and removes them for off values.",
+      "tension": "A feeling of expectation, instability, or pressure to continue.",
+      "release": "A reduction of musical tension, often felt when an expected sound or stable idea returns.",
+      "contrast": "A noticeable difference that helps separate musical ideas or sections."
+    }
+  },
+  {
+    "id": "s29",
+    "title": "Name a reusable idea",
+    "unit": "8 · Independent pattern practice",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s28"
+    ],
+    "goal": "Use a variable to avoid copying the same pattern repeatedly.",
+    "explain": [
+      "const gives a value a name. In const drums = s(\"bd ~ sd ~\"), the equals sign assigns the pattern to drums; it does not ask whether two things are equal. The name can then be reused in an arrangement. It is written without quotes because you want the stored pattern, not the word “drums.”",
+      "Name by musical job. Clear names such as drums, bass, and intro make your intentions visible when you return tomorrow. A change to the shared definition can then update several uses. Keep the source short enough that you can still explain every line; reuse should remove clutter, not hide confusion."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Two named patterns feed a six-cycle form. The semicolons end the declarations; line breaks help a person read the structure.",
+      "code": "const drums = s(\"bd ~ sd ~\").gain(0.25);\nconst hats = s(\"hh*8\").gain(0.1);\narrange([2, drums], [4, stack(drums, hats)])"
+    },
+    "practice": {
+      "question": "Why is drums unquoted inside stack?",
+      "options": [
+        "All JavaScript text must be unquoted",
+        "Quotes make any code faster",
+        "It names a built-in sample collection",
+        "It refers to the pattern assigned to that name"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Actual text strings still need appropriate quotes.",
+        "Quotes do not control playback speed.",
+        "Here drums is a name we created, not a default sample name.",
+        "The variable name retrieves the stored pattern value."
+      ]
+    },
+    "tryIt": "Name your kick/snare part and bass part, then arrange them without copying their full definitions into every section.",
+    "terms": [
+      "const",
+      "variable",
+      "assignment",
+      "reuse"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/code/"
+    ],
+    "glossary": {
+      "const": "JavaScript syntax declaring a name whose assigned binding is not reassigned.",
+      "variable": "A name referring to a stored value, such as a pattern.",
+      "assignment": "Giving a value to a name with =; not a test of equality.",
+      "reuse": "Using one named definition in several places rather than copying it."
+    }
+  },
+  {
+    "id": "s30",
+    "title": "Debug one layer at a time",
+    "unit": "8 · Independent pattern practice",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s29"
+    ],
+    "goal": "Separate syntax, environment, and musical problems.",
+    "explain": [
+      "When there is no sound, do not change ten musical settings at once. First stop playback. Check the external editor’s error message, matching quotes, matching parentheses, and spelling. Then try one quiet known synth note. If that works, the browser audio path is functioning and you can investigate the larger pattern.",
+      "Add the original parts back one at a time: rhythm, sound choice, settings, transformations, then layers. A sample can fail because it is not loaded even when syntax is valid. A pattern can run correctly and still sound musically crowded. Those are different problems with different remedies; keep a short log of the smallest change that fixes each."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This is a minimal diagnostic pattern, not a finished composition. If it works but a sample-based version does not, check the sample collection and network loading before rewriting your melody.",
+      "code": "note(\"d3\").s(\"triangle\").gain(0.1)"
+    },
+    "practice": {
+      "question": "The simple synth works, but a custom sample name is silent. What should you check next?",
+      "options": [
+        "Whether the whole computer needs replacing",
+        "Whether the tempo must be 200 BPM",
+        "Whether the sample exists and loaded successfully",
+        "Whether D minor is an invalid key"
+      ],
+      "answer": 2,
+      "feedback": [
+        "There is already evidence the basic audio path works.",
+        "Faster tempo does not load a missing sample.",
+        "This isolates the difference between the working synth and the sample path.",
+        "A musical key does not make a valid sample disappear."
+      ]
+    },
+    "tryIt": "Take a working four-line pattern, deliberately misspell one sound name, and diagnose it. Restore the name rather than changing unrelated controls.",
+    "terms": [
+      "debugging",
+      "syntax",
+      "sample loading",
+      "minimal example"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/faq/"
+    ],
+    "glossary": {
+      "debugging": "Finding a problem by testing small, specific causes.",
+      "syntax": "The rules for arranging code symbols so the language can read them.",
+      "sample loading": "Making a recording available to the audio environment before it can play.",
+      "minimal example": "The smallest code that can test one question or reproduce one problem."
+    }
+  },
+  {
+    "id": "s31",
+    "title": "Read the scope of a reference",
+    "unit": "8 · Independent pattern practice",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s30"
+    ],
+    "goal": "Check whether a command belongs in your current environment.",
+    "explain": [
+      "A reference is a map, not a promise that every entry works everywhere. A name may be an alias, a library-only helper, an experimental feature, or a control that needs a particular sound engine. The same broad family can contain several numbered variants without being several different musical ideas.",
+      "When you meet an unfamiliar command, ask four questions: what does it receive, what does it return or change, what setup does it require, and how will I hear whether it worked? Prefer a small standard example before importing an extension. This course teaches a selected production toolkit; the separate reference supports wider exploration without turning every obscure helper into homework."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This is a reference-reading example, not runnable music. Check the current official page and the environment notes before trying an unfamiliar extension.",
+      "code": "// Read-only lookup exercise:\n// sound and s: aliases for a sound control\n// voicing: tonal helper\n// Csound-specific controls: require that engine"
+    },
+    "practice": {
+      "question": "A reference labels a helper “library only.” What is the safest conclusion?",
+      "options": [
+        "It is necessarily a sound sample",
+        "It must run in every web editor",
+        "It may require a programmatic package context rather than the standard editor",
+        "It is always musically superior"
+      ],
+      "answer": 2,
+      "feedback": [
+        "Helpers can manipulate data or patterns without being sounds.",
+        "The label warns against that assumption.",
+        "Availability depends on the environment and imports described by the library.",
+        "A technical scope label is not a quality ranking."
+      ]
+    },
+    "tryIt": "Choose one unfamiliar reference entry. Write its input, musical purpose, required setup, and a tiny verification plan before using it.",
+    "terms": [
+      "alias",
+      "package",
+      "experimental",
+      "library helper"
+    ],
+    "sources": [
+      "https://strudel.cc/technical-manual/packages/"
+    ],
+    "glossary": {
+      "alias": "Another name for the same function or control.",
+      "package": "A separately supplied collection of code; availability depends on imports and environment.",
+      "experimental": "A feature whose behavior or interface may still change.",
+      "library helper": "A utility that may belong to programmatic package use rather than the normal editor."
+    }
+  },
+  {
+    "id": "s32",
+    "title": "Finish a small original study",
+    "unit": "8 · Independent pattern practice",
+    "level": "Intermediate",
+    "prerequisites": [
+      "s31"
+    ],
+    "goal": "Combine a clear plan, controlled variation, and a listening test.",
+    "explain": [
+      "A finished study has a purpose you can state. Choose a pulse, a tonal center, a short motif, and one kind of contrast. You are practicing decisions, not trying to reproduce a favorite artist’s recording. A short original phrase can teach more than copying a large unexplained patch.",
+      "Use a three-pass review. First count the form and confirm the intended boundary. Next listen for the main role: can you still follow the bass or motif? Finally remove anything that adds clutter without helping the purpose. Completion here means a piece you can explain and revise; it is not a guarantee of professional sound or a substitute for mixing practice."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This eight-cycle study has a two-cycle opening, four-cycle bass section, and two-cycle return. It uses a half-time frame under a 140 BPM four-beat convention.",
+      "code": "setcpm(140/4);\nconst beat = s(\"bd ~ sd ~\").gain(0.22);\nconst bass = note(\"d2 ~ [d2 a2] ~\").s(\"triangle\").decay(0.18).sustain(0).gain(0.16);\narrange([2, beat], [4, stack(beat, bass)], [2, beat])"
+    },
+    "practice": {
+      "question": "Which review question best tests whether you understand this study?",
+      "options": [
+        "Does it contain the maximum number of functions?",
+        "Can I predict the section boundaries and explain each part’s job?",
+        "Does it sound exactly like a commercial track?",
+        "Can I make every layer louder?"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Function count is not musical understanding.",
+        "Predicting structure and explaining roles demonstrates control.",
+        "Copying an existing recording is not this project’s goal.",
+        "Loudness alone does not improve the composition."
+      ]
+    },
+    "tryIt": "Make an original eight-cycle study outside the app. Change the bass contour and one phrase ending. Save your code, write a three-sentence listening review, and choose one revision—not ten.",
+    "terms": [
+      "motif",
+      "form",
+      "arrangement",
+      "revision"
+    ],
+    "sources": [
+      "https://strudel.cc/workshop/recap/"
+    ],
+    "glossary": {
+      "motif": "A short recognizable musical idea that can be repeated and developed.",
+      "form": "The larger order and lengths of musical sections.",
+      "arrangement": "The placement and changing roles of musical parts over time.",
+      "revision": "A deliberate change made after evaluating a draft."
+    }
+  },
+  {
+    "id": "s33",
+    "title": "Give events unequal shares",
+    "unit": "9 · Advanced time design",
+    "level": "Advanced",
+    "prerequisites": [
+      "s32"
+    ],
+    "goal": "Use temporal weights without confusing them with repetitions.",
+    "explain": [
+      "An @ weight changes how much of the available time an item receives. In \"d3@3 f3\", D receives three shares and F receives one. The total is four shares, so their starts are at cycle position 0 and 3/4. Weight does not mean three separate D attacks.",
+      "This makes long-short rhythmic shapes easy to describe. Write the total weight underneath the pattern, then convert each share into a fraction of the cycle. A weighted slot describes time allocation; the sound’s actual audible tail still depends on the instrument, envelope, and duration controls."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "D occupies the first three quarters of the cycle’s event structure. F begins at the final quarter. Compare this with \"d3 d3 d3 f3\", which has four separate starts.",
+      "code": "note(\"d3@3 f3\").s(\"triangle\").gain(0.18)"
+    },
+    "practice": {
+      "question": "How many note onsets are written in d3@3 f3?",
+      "options": [
+        "Three",
+        "Four",
+        "Twelve",
+        "Two"
+      ],
+      "answer": 3,
+      "feedback": [
+        "The weight 3 is not a trigger count.",
+        "That would describe d3 d3 d3 f3.",
+        "No multiplication by twelve is present.",
+        "There are two items, with unequal time weights."
+      ]
+    },
+    "tryIt": "Design a five-share rhythm with weights 2, 1, 2. Calculate the three start positions before listening.",
+    "terms": [
+      "weight",
+      "elongation",
+      "onset"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/mini-notation/"
+    ],
+    "glossary": {
+      "weight": "A relative share of pattern time assigned to an item.",
+      "elongation": "Giving a pattern item more time without necessarily adding new attacks.",
+      "onset": "The start of a musical event."
+    }
+  },
+  {
+    "id": "s34",
+    "title": "Repeat each event or the whole phrase?",
+    "unit": "9 · Advanced time design",
+    "level": "Advanced",
+    "prerequisites": [
+      "s33"
+    ],
+    "goal": "Choose ply or fast based on the order you want.",
+    "explain": [
+      "ply repeats each event inside its own time slot. fast repeats the whole pattern faster. Their event counts can match while their orders differ. This is an important example of why counting hits alone cannot describe a rhythm.",
+      "Use a two-sound source so the distinction is obvious. One transformation makes pairs; the other alternates the original phrase more quickly. In a fill, paired repetitions can feel like a roll on each instrument, while whole-phrase repetition preserves the phrase’s alternation. Choose by the result you intend, not by whichever function is shorter."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "ply(2) produces kick–kick–snare–snare here. Replacing it with fast(2) produces kick–snare–kick–snare across the same cycle.",
+      "code": "s(\"bd sd\").ply(2).gain(0.22)"
+    },
+    "practice": {
+      "question": "Which result matches s(\"hh sd\").ply(2)?",
+      "options": [
+        "sd hh sd hh",
+        "hh sd with no added starts",
+        "hh sd hh sd",
+        "hh hh sd sd"
+      ],
+      "answer": 3,
+      "feedback": [
+        "That also changes the source order.",
+        "ply(2) adds a repeat inside each event slot.",
+        "That is the whole phrase repeated twice.",
+        "Each source event repeats in its own slot."
+      ]
+    },
+    "tryIt": "Write the expected order for ply(3) and fast(3) on a two-note melody. Verify both with the same quiet sound.",
+    "terms": [
+      "ply",
+      "fast",
+      "event"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/time-modifiers/"
+    ],
+    "glossary": {
+      "ply": "Repeats each event within its own time slot.",
+      "fast": "Runs a pattern faster by a factor relative to the shared cycle clock.",
+      "event": "A timed occurrence carrying a value or sound instruction."
+    }
+  },
+  {
+    "id": "s35",
+    "title": "Transform one region at a time",
+    "unit": "9 · Advanced time design",
+    "level": "Advanced",
+    "prerequisites": [
+      "s34"
+    ],
+    "goal": "Use chunk to move a small variation through a pattern.",
+    "explain": [
+      "chunk divides a cycle into regions and applies a recipe to a different region on successive cycles. This creates organized variation: the affected area moves while most of the source remains recognizable. The number of chunks refers to regions of time, not necessarily the number of source notes.",
+      "Start with four equal source events and four regions so the map is easy to see. Once you understand that case, an uneven source becomes an interesting challenge: one region might contain a rest, another several short notes. Draw the region boundaries independently of the notes so you do not confuse the grid with its contents."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "One quarter-cycle region receives local repetition per cycle, then the target region moves. Most of the familiar pattern is left unchanged.",
+      "code": "s(\"bd hh sd hh\").chunk(4, x => x.ply(2)).gain(0.2)"
+    },
+    "practice": {
+      "question": "What should you draw first to understand chunk(4) on an uneven rhythm?",
+      "options": [
+        "A new global tempo for every hit",
+        "Four equal time regions",
+        "Four new instrument names",
+        "A list of four random pitches"
+      ],
+      "answer": 1,
+      "feedback": [
+        "The clock remains shared.",
+        "Chunking partitions time; notes are then located inside those regions.",
+        "The operation does not require new sounds.",
+        "Pitch selection is a separate concern."
+      ]
+    },
+    "tryIt": "Replace the second source slot with [hh hh]. Sketch which two hats belong to that one quarter-cycle region.",
+    "terms": [
+      "chunk",
+      "region",
+      "transformation"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/conditional-modifiers/"
+    ],
+    "glossary": {
+      "chunk": "Applies a transformation to successive time regions on successive cycles.",
+      "region": "A bounded portion of pattern time.",
+      "transformation": "A rule that changes an existing pattern’s values or time structure."
+    }
+  },
+  {
+    "id": "s36",
+    "title": "An answer can arrive later",
+    "unit": "9 · Advanced time design",
+    "level": "Advanced",
+    "prerequisites": [
+      "s35"
+    ],
+    "goal": "Use off to add a delayed transformed copy.",
+    "explain": [
+      "off keeps the original and adds a transformed copy after a cycle offset. Its first argument is measured in cycles. A value of 1/8 is one eighth of a cycle, not automatically one eighth of a second.",
+      "This can create call-and-response or a small rhythmic shadow. It can also make a busy pattern much busier, so begin with a sparse source and a quieter copy. A delayed copy crosses phrase boundaries when its source is near the end; the timeline does not stop at the page’s right edge."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "At 30 cycles per minute, one cycle is two seconds, so the added answer begins 0.25 seconds later. The original still plays.",
+      "code": "setcpm(30)\nnote(\"d3 ~ ~ ~\").s(\"triangle\").gain(0.18)\n.off(1/8, x => x.gain(0.08))"
+    },
+    "practice": {
+      "question": "If the cycle lasts four seconds, how long is an offset of 1/8?",
+      "options": [
+        "0.125 seconds",
+        "0.25 seconds",
+        "0.5 seconds",
+        "8 seconds"
+      ],
+      "answer": 2,
+      "feedback": [
+        "That treats the fraction as seconds rather than a fraction of the cycle.",
+        "That was the result for a two-second cycle.",
+        "4 seconds × 1/8 = 0.5 seconds.",
+        "The offset is a fraction, not eight full seconds."
+      ]
+    },
+    "tryIt": "Place a sparse source hit late in a cycle and predict where its delayed copy lands. Keep the added copy quieter than the source.",
+    "terms": [
+      "off",
+      "offset",
+      "call and response"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/accumulation/"
+    ],
+    "glossary": {
+      "off": "Adds a transformed copy delayed by a cycle-relative offset while keeping the original.",
+      "offset": "A displacement in time; always check the parameter’s units.",
+      "call and response": "A musical gesture followed by an answering gesture."
+    }
+  },
+  {
+    "id": "s37",
+    "title": "Event echoes and audio delay differ",
+    "unit": "10 · Advanced control and sound",
+    "level": "Advanced",
+    "prerequisites": [
+      "s36"
+    ],
+    "goal": "Choose whether to repeat events or process their sound.",
+    "explain": [
+      "echo adds delayed pattern copies with decreasing strength. delay is an audio effect that repeats processed sound. These can create similar listening impressions, but one works with event structure and the other with the audio path. Do not treat their time parameters as interchangeable.",
+      "For a clean test, leave a long gap after the source note. That makes the repeats easier to hear and count. Start with small repeat counts and gentle levels. If using audio delayfeedback later, keep it well below 1; high feedback can build up dangerously rather than fading."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The echo operation adds a short fading repeat structure with offsets measured in cycles. For audio delay, delaytime is in seconds in the documented Web Audio engine.",
+      "code": "note(\"d4 ~ ~ ~\").s(\"triangle\").gain(0.14).echo(3,1/8,0.5)"
+    },
+    "practice": {
+      "question": "Why should you not copy an echo offset directly into delaytime and assume the same timing?",
+      "options": [
+        "Echo has no rhythm",
+        "Delay always changes the key",
+        "Both values are MIDI notes",
+        "They use different timing units"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Echo places repeated events in time.",
+        "Audio delay does not inherently rewrite the key.",
+        "These parameters describe time, not pitch.",
+        "Echo offsets are cycle-relative; delaytime is measured in seconds."
+      ]
+    },
+    "tryIt": "At your chosen tempo, calculate the seconds equivalent of 1/8 cycle. Use that calculation before comparing an audio delay with a pattern echo.",
+    "terms": [
+      "echo",
+      "delay",
+      "delaytime",
+      "feedback"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/accumulation/"
+    ],
+    "glossary": {
+      "echo": "Adds fading, time-offset pattern copies.",
+      "delay": "An audio effect that repeats sound after a time interval.",
+      "delaytime": "The documented Web Audio delay interval in seconds.",
+      "feedback": "A fraction sent around a repeating audio path; excessive amounts can build up."
+    }
+  },
+  {
+    "id": "s38",
+    "title": "Sample a signal into steps",
+    "unit": "10 · Advanced control and sound",
+    "level": "Advanced",
+    "prerequisites": [
+      "s37"
+    ],
+    "goal": "Turn a changing number stream into discrete musical events.",
+    "explain": [
+      "A continuous signal has values at every time, but notes need specific starts. segment(8) samples a signal at eight points per cycle. This gives a discrete event grid you can use for pitches or control values.",
+      "Think of taking eight photographs of a moving object. More photographs give more observations; they do not change the object’s underlying path. Choose the number of musical events for a reason. A dense signal-generated melody can become shapeless unless register, scale, and rhythm give the listener something to follow."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The signal supplies degree values on an eight-event grid. Scale maps them into D minor. This is generated material to evaluate and shape, not an automatic composition recipe.",
+      "code": "n(sine.range(0,6).segment(8)).scale(\"D4:minor\").s(\"triangle\").gain(0.12)"
+    },
+    "practice": {
+      "question": "What changes most directly when segment(8) becomes segment(4)?",
+      "options": [
+        "The sound source becomes a sample recording",
+        "The scale becomes major",
+        "The number of sampled events per cycle",
+        "The global clock must halve"
+      ],
+      "answer": 2,
+      "feedback": [
+        "segment does not switch oscillator and recording sources.",
+        "The scale string remains D minor.",
+        "The control stream is observed at four event positions rather than eight.",
+        "The cycle tempo can stay the same."
+      ]
+    },
+    "tryIt": "Compare four and eight events per cycle. Choose which leaves more useful room for a drum part and explain your choice.",
+    "terms": [
+      "segment",
+      "continuous signal",
+      "discrete event"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/signals/"
+    ],
+    "glossary": {
+      "segment": "Samples a pattern or signal at a specified number of events per cycle.",
+      "continuous signal": "A value stream defined across time rather than only a finite event list.",
+      "discrete event": "An occurrence with a particular time position, unlike a continuously available value."
+    }
+  },
+  {
+    "id": "s39",
+    "title": "Alignment is a timing decision",
+    "unit": "10 · Advanced control and sound",
+    "level": "Advanced",
+    "prerequisites": [
+      "s38"
+    ],
+    "goal": "Predict how differently paced value patterns meet.",
+    "explain": [
+      "When two patterns combine, their timing structures matter. A second value pattern is not always consumed as a simple list of “next values.” By default, many combinations align their cycles and apply right-side values within the left-side event structure.",
+      "Start with evenly aligned patterns before experimenting with mismatched lengths. Draw both timelines on the same page, then look at where events overlap. Advanced alignment modes such as squeeze deliberately fit a whole right-hand cycle inside each left event. That changes the musical construction, not just the spelling of the code."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "Each left-side value receives a squeezed 0–1 pattern: the degree sequence becomes [0 1] followed by [2 3]. Here add means numerical addition before scale conversion.",
+      "code": "\"0 2\".add.squeeze(\"0 1\").scale(\"D4:minor\").note().s(\"triangle\").gain(0.12)"
+    },
+    "practice": {
+      "question": "What is squeezed into each left event in this example?",
+      "options": [
+        "The browser window",
+        "The complete right-hand 0–1 pattern",
+        "The entire song audio file",
+        "Only a random pitch"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Alignment concerns musical pattern time.",
+        "Each left event hosts the right pattern, producing two local degree values.",
+        "No recorded song is loaded.",
+        "The values are explicitly written, not random."
+      ]
+    },
+    "tryIt": "Draw two large boxes labeled 0 and 2. Put small +0 and +1 boxes inside each, then calculate the four resulting degrees.",
+    "terms": [
+      "alignment",
+      "squeeze",
+      "add",
+      "scale degree"
+    ],
+    "sources": [
+      "https://strudel.cc/technical-manual/alignment/"
+    ],
+    "glossary": {
+      "alignment": "How the time structures of combined patterns are matched.",
+      "squeeze": "An alignment mode that fits a whole pattern into another pattern’s event span.",
+      "add": "Adds numeric values; whether they are degrees or semitones depends on where it is applied.",
+      "scale degree": "A position in a scale; Strudel’s degree indexing starts at 0."
+    }
+  },
+  {
+    "id": "s40",
+    "title": "Harmony can grow from one line",
+    "unit": "10 · Advanced control and sound",
+    "level": "Advanced",
+    "prerequisites": [
+      "s39"
+    ],
+    "goal": "Add scale-relative harmony while tracking what the numbers mean.",
+    "explain": [
+      "Adding to scale-degree numbers moves through a scale; adding to MIDI note numbers moves by semitones. The order of these operations matters. A shift of two scale positions can create a diatonic third, whose semitone size depends on the scale location.",
+      "superimpose retains the original pattern and adds a transformed version. This makes it possible to derive a harmony from one line rather than maintain two copied melodies. It is a starting rule, not a promise every moment will sound good over your bass. Check strong beats against the intended chords and adjust when needed."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The original degrees 0,1,3,2 are accompanied by degrees 2,3,5,4. Addition happens before the scale conversion, so the partner stays inside the selected scale.",
+      "code": "\"0 1 3 2\".superimpose(x => x.add(2))\n.scale(\"D4:minor\").note().s(\"triangle\").gain(0.1)"
+    },
+    "practice": {
+      "question": "Why is add(2) before scale different from shifting MIDI pitches by 2?",
+      "options": [
+        "Before scale, 2 counts scale positions; MIDI shifts count semitones",
+        "Both always mean exactly one octave",
+        "Only MIDI notes can create harmony",
+        "Scale degrees ignore the chosen key"
+      ],
+      "answer": 0,
+      "feedback": [
+        "The units differ, so the resulting pitch distances can differ.",
+        "An octave is not a two-step shift here.",
+        "Scale-based patterns can also make simultaneous harmonies.",
+        "The scale root and type determine the pitches."
+      ]
+    },
+    "tryIt": "List the two voices for a four-event scale pattern. Check whether each strong-beat pair supports your chosen bass note.",
+    "terms": [
+      "superimpose",
+      "diatonic",
+      "add",
+      "harmony"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/accumulation/"
+    ],
+    "glossary": {
+      "superimpose": "Keeps an original pattern and layers its transformed result over it.",
+      "diatonic": "Using the notes of the chosen scale or key collection.",
+      "add": "Adds numeric values; whether they are degrees or semitones depends on where it is applied.",
+      "harmony": "How pitches combine and relate as chords or simultaneous voices."
+    }
+  },
+  {
+    "id": "s41",
+    "title": "FM changes color through fast motion",
+    "unit": "11 · Advanced composition toolkit",
+    "level": "Advanced",
+    "prerequisites": [
+      "s40"
+    ],
+    "goal": "Distinguish FM amount from its frequency ratio.",
+    "explain": [
+      "Frequency modulation, or FM, changes an oscillator’s frequency rapidly enough to create new tone colors. fm controls the modulation amount; fmh controls a frequency relationship involved in that modulation. Keep these two questions separate: how much change, and what relationship drives it?",
+      "A metallic texture can come from more complex relationships, while simple ratios can produce more pitched results. That is a useful direction, not an absolute rule about musical quality. Start with modest amounts and a comfortable gain. Compare one parameter at a time before using the result as a bass or lead voice."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The note pattern and ratio stay fixed while FM amount changes over four cycles. Listen for timbral difference rather than assuming the written melody changed.",
+      "code": "note(\"d3 ~ a3 ~\").s(\"sine\").fm(\"<0 1 2 1>\").fmh(2).gain(0.1)"
+    },
+    "practice": {
+      "question": "Which experiment isolates modulation amount?",
+      "options": [
+        "Change every note and waveform together",
+        "Change tempo and scale together",
+        "Raise gain until the sound is harsh",
+        "Change fm while keeping fmh and notes fixed"
+      ],
+      "answer": 3,
+      "feedback": [
+        "Several simultaneous changes hide the cause.",
+        "Tempo and scale test different musical choices.",
+        "Higher level is not a controlled FM experiment.",
+        "This holds the other main variables steady."
+      ]
+    },
+    "tryIt": "Compare fm(0), fm(1), and fm(2) with the same ratio and notes. Write a sound-role description for the version you prefer.",
+    "terms": [
+      "FM",
+      "fm",
+      "fmh",
+      "modulation index"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/synths/"
+    ],
+    "glossary": {
+      "FM": "Frequency modulation: rapid frequency change used to create tone color.",
+      "fm": "Sets a synth’s FM modulation amount or index.",
+      "fmh": "Sets a frequency relationship used by the FM synth.",
+      "modulation index": "A measure of FM amount affecting the resulting spectrum."
+    }
+  },
+  {
+    "id": "s42",
+    "title": "Slices rearrange a recording’s timeline",
+    "unit": "11 · Advanced composition toolkit",
+    "level": "Advanced",
+    "prerequisites": [
+      "s41"
+    ],
+    "goal": "Choose parts of a sample without confusing them with separate files.",
+    "explain": [
+      "slice divides a recording into regions and uses a pattern of indices to choose them. The indices now refer to regions inside a recording, not to different recordings in a collection. A four-slice sample has indices 0 through 3.",
+      "Use your own short recording or a sample whose license permits your intended use. The example uses a standard snare name only to show syntax; slicing a short hit may yield several quiet tail fragments. For a richer exercise, load your own original rhythmic recording in external Strudel and inspect its boundaries before rearranging it."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The sample’s first, third, second, and fourth quarters are requested in that order. Slice 2 is the third region because indexing begins at zero.",
+      "code": "s(\"sd\").slice(4,\"0 2 1 3\").gain(0.18)"
+    },
+    "practice": {
+      "question": "With four equal slices, which index selects the last quarter?",
+      "options": [
+        "3",
+        "4",
+        "0",
+        "2"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Indices 0,1,2,3 cover the four quarters.",
+        "Index 4 is outside the stated four-slice set.",
+        "Index 0 is the first quarter.",
+        "Index 2 is the third quarter."
+      ]
+    },
+    "tryIt": "Record a short original four-sound phrase and use it only in external Strudel. Predict a slice reordering, then compare the result with your timeline.",
+    "terms": [
+      "slice",
+      "sample index",
+      "zero-based index"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/samples/"
+    ],
+    "glossary": {
+      "slice": "Selects indexed regions inside a recording according to a pattern.",
+      "sample index": "A zero-based selection number; context may refer to a recording or a region within one.",
+      "zero-based index": "A list position counted from 0 rather than 1."
+    }
+  },
+  {
+    "id": "s43",
+    "title": "Fit audio into musical time",
+    "unit": "11 · Advanced composition toolkit",
+    "level": "Advanced",
+    "prerequisites": [
+      "s42"
+    ],
+    "goal": "Recognize the pitch trade-off of playback-speed fitting.",
+    "explain": [
+      "fit makes a sample match its event duration; loopAt fits it to a chosen number of cycles. These operations can change playback speed. A faster reading of a recording can make it shorter and higher; a slower reading can make it longer and lower. Timing and pitch are therefore linked in this kind of resampling. Inside the quoted rhythm text, /2 stretches sd across two cycles. This mini-notation instruction is different from the arithmetic division sign used outside quotes.",
+      "Do not assume fitting is a transparent time-stretch that preserves pitch. Listen to both the timing and the new tone. Use your own or properly licensed recordings for released work. A long sample and a one-shot drum demonstrate different results, so choose source material that makes the question audible."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "The snare sample is fitted to the two-cycle event duration, which is intentionally an extreme demonstration. For a practical loop experiment, substitute your own loaded recording and compare its original length.",
+      "code": "s(\"sd/2\").fit().gain(0.12)"
+    },
+    "practice": {
+      "question": "A recording is played at twice its original playback speed. What common trade-off should you expect?",
+      "options": [
+        "A different written time signature",
+        "Shorter duration and higher pitch",
+        "Longer duration and lower pitch",
+        "Exactly unchanged duration and pitch"
+      ],
+      "answer": 1,
+      "feedback": [
+        "Playback speed does not write a time signature.",
+        "Reading the recording twice as fast halves its duration and raises its pitch in ordinary resampling.",
+        "That describes slower playback.",
+        "Ordinary speed changes do not preserve both."
+      ]
+    },
+    "tryIt": "Calculate how a two-second recording would change at half and double speed. Then compare with an original recording you control.",
+    "terms": [
+      "fit",
+      "loopAt",
+      "resampling",
+      "playback speed"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/samples/"
+    ],
+    "glossary": {
+      "fit": "Adjusts a sample to match its event duration.",
+      "loopAt": "Adjusts sample speed to fit a chosen number of cycles.",
+      "resampling": "Playing a recording at a changed reading speed, linking duration and pitch changes.",
+      "playback speed": "How fast a recording is read relative to its original rate."
+    }
+  },
+  {
+    "id": "s44",
+    "title": "Make an arrangement you can reproduce",
+    "unit": "11 · Advanced composition toolkit",
+    "level": "Advanced",
+    "prerequisites": [
+      "s43"
+    ],
+    "goal": "Turn a generative sketch into a deliberate, reviewable study.",
+    "explain": [
+      "An advanced pattern is not advanced merely because it has many functions. It is advanced when you can explain its structure, control its variation, diagnose it, and choose what to keep. For a reproducible study, write explicit pitches and schedules for the moments that must repeat exactly.",
+      "Plan three versions of one motif: plain, transformed, and reduced. Give each a place in a form and make a listening checklist before running it. Check the cycle count, the main arrival, the bass register, and whether added layers obscure the motif. Save code and environment notes together so a later version can be investigated rather than guessed at."
+    ],
+    "example": {
+      "title": "Read it, then predict it",
+      "text": "This twelve-cycle form returns to the motif after a two-cycle reduction. Its one scheduled reversal is intentional and inspectable; no chance decision determines the main section boundary.",
+      "code": "setcpm(120/4);\nconst motif = note(\"d4 f4 a4 e4\").s(\"triangle\").gain(0.12);\nconst pulse = s(\"bd ~ sd ~\").gain(0.2);\narrange(\n [4, stack(pulse, motif)],\n [4, stack(pulse, motif.lastOf(4, x => x.rev()))],\n [2, pulse],\n [2, stack(pulse, motif)]\n)"
+    },
+    "practice": {
+      "question": "Which evidence best supports calling your arrangement controlled?",
+      "options": [
+        "You can explain and predict its important events, then verify them by listening",
+        "It contains every reference function",
+        "It uses the loudest possible settings",
+        "It never needs revision"
+      ],
+      "answer": 0,
+      "feedback": [
+        "Prediction, observation, and revision show practical control.",
+        "Completeness of function usage is not a composition goal.",
+        "Loudness is not structural understanding.",
+        "Revision is a normal part of skilled work."
+      ]
+    },
+    "tryIt": "Create a 12- or 16-cycle original study with a clear motif, one derived variation, and a deliberate gap. Document tempo convention, source sounds, and required packages. After listening, make one evidence-based revision and explain the trade-off.",
+    "terms": [
+      "reproducibility",
+      "motif",
+      "arrangement",
+      "revision"
+    ],
+    "sources": [
+      "https://strudel.cc/learn/factories/"
+    ],
+    "glossary": {
+      "reproducibility": "Being able to recreate and explain the intended result with saved code and setup notes.",
+      "motif": "A short recognizable musical idea that can be repeated and developed.",
+      "arrangement": "The placement and changing roles of musical parts over time.",
+      "revision": "A deliberate change made after evaluating a draft."
+    }
+  },
+  {
+    "id": "s45",
+    "title": "Code order is not a pedalboard",
+    "unit": "11 · Advanced composition toolkit",
+    "level": "Advanced",
+    "prerequisites": [
+      "s44"
+    ],
+    "goal": "Separate pattern operations from fixed audio-engine routing.",
+    "explain": [
+      "Pattern operations can depend strongly on their order. But writing audio controls in a different dot order does not freely rewire Strudel’s Web Audio effects. The engine has a documented processing order, and repeated settings for a single-use effect can overwrite earlier settings.",
+      "For example, two lpf calls do not create two low-pass filter stages around another effect. The later cutoff setting replaces the earlier value for that control. When a result surprises you, inspect whether you are changing pattern structure, assigning control values, or requesting an audio effect. Those are three different kinds of operation."
+    ],
+    "example": {
+      "title": "Look closely at one idea",
+      "text": "The final low-pass cutoff here is 1800 Hz. This is not “filter at 400, distort, then filter again at 1800.” Read the official signal-chain reference before assuming custom routing.",
+      "code": "note(\"d3*4\").s(\"sawtooth\").lpf(400).distort(0.3).lpf(1800).gain(0.08)"
+    },
+    "practice": {
+      "question": "Why is this not a two-filter serial chain?",
+      "options": [
+        "The note has no pitch",
+        "All dots are ignored",
+        "Distortion automatically mutes filters",
+        "The later lpf assigns the same single-use control again"
+      ],
+      "answer": 3,
+      "feedback": [
+        "D3 specifies a pitch.",
+        "Dots still chain operations and settings.",
+        "The issue is duplicate control assignment, not an automatic mute.",
+        "The engine’s fixed routing and control assignment differ from building arbitrary pedal stages."
+      ]
+    },
+    "tryIt": "Compare the example with one that keeps only lpf(1800). Explain why you should check the engine’s signal-chain rules before designing an effect-order experiment.",
+    "terms": [
+      "signal chain",
+      "lpf",
+      "distort",
+      "overwrite"
+    ],
+    "glossary": {
+      "signal chain": "The order in which generated audio passes through processing stages.",
+      "lpf": "The low-pass cutoff control, not a request to add unlimited separate filter instances.",
+      "distort": "A distortion effect that adds nonlinear tone coloration.",
+      "overwrite": "Replace an earlier assigned control value with a later value."
+    },
+    "sources": [
+      "https://strudel.cc/learn/effects/"
+    ]
+  }
+]

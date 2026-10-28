@@ -1,0 +1,10 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const theory=JSON.parse(fs.readFileSync('dist/theory.json')),strudel=JSON.parse(fs.readFileSync('dist/strudel.json')),all=[...theory,...strudel],baseline=JSON.parse(fs.readFileSync('docs/v1-lesson-baseline.json'));
+for(const old of baseline)assert.deepEqual(all.find(l=>l.id===old.id),old,`Published lesson ${old.id} must remain unchanged`);
+assert.equal(baseline.length,108);assert.equal(theory.length,115);assert.equal(strudel.length,50);
+for(const [genre,count]of Object.entries({bridge:2,dubstep:8,trance:8,synthwave:7,rap:7,pop:8,classical:9,cinematic:8}))assert.equal(theory.filter(l=>l.genre===genre).length,count,genre+' map count');
+const added=theory.filter(l=>l.genre);for(const l of added){assert.ok(l.sources?.length,l.id+' source provenance');assert.ok(l.explain.join(' ').length>350,l.id+' substantive teaching');if(l.example.sectionPlan){assert.ok(l.example.sectionPlan.some(p=>p.active),l.id+' diagram identifies focused section occurrence(s)');for(const p of l.example.sectionPlan)assert.ok(p.label&&p.role&&Number.isFinite(p.bars)&&p.bars>0,l.id+' valid section plan');}for(const ns of [...(l.example.chords||[]),...(l.example.compareChords||[])])assert.ok(ns.length&&ns.every(n=>Number.isFinite(n)&&n>=0&&n<=127),l.id+' valid chord');}
+const ref=JSON.parse(fs.readFileSync('dist/reference.json')),baseNames=JSON.parse(fs.readFileSync('docs/v1-baseline.json')).referenceNames,nowNames=new Set(ref.flatMap(r=>[r.name,...(r.aliases||[])]));for(const name of baseNames)assert.ok(nowNames.has(name),'old reference lookup retained '+name);assert.equal(ref.length,655);
+assert.ok(ref.find(r=>r.name==='angle').example.includes('.r(0.6)'),'radial angle dependency');assert.ok(ref.find(r=>r.name==='speak').notes.some(n=>n.includes('cancels current speech')),'speech cancellation semantics');
+for(const name of ['getFrequency','getDuration'])assert.ok(ref.find(r=>r.name===name));
+console.log('Release 1.1 checks: all108 original lessons unchanged;57 genre additions across7topics+bridge;655 references retain every prior lookup name.');

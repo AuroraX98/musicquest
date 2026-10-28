@@ -1,0 +1,40 @@
+{
+  "release": "1.1",
+  "referenceEntryCount": 655,
+  "baselineDate": "2026-10-03",
+  "supplementAuditDate": "2026-10-28",
+  "additions": 79,
+  "aliasPatchRows": 20,
+  "canonicalCorrections": {
+    "getFreq": "getFrequency",
+    "getDur": "getDuration"
+  },
+  "meaning": "Counts are reference rows, not every executable function in every Strudel build. The original names remain searchable as aliases.",
+  "sourceReview": "Current public live code and documentation inspected; exact artifact hashes retained in research evidence. No reliable live release number was exposed.",
+  "publishedTests": {
+    "packages": "@strudel/core, @strudel/mini, @strudel/transpiler",
+    "version": "1.2.6",
+    "entries": 35,
+    "assertions": 53,
+    "scope": "Pure-pattern event values and timing only. No scheduler, audio, current-live runtime, drawing, browser callbacks or hardware test."
+  },
+  "remainingLimits": [
+    "No blanket completeness guarantee across optional packages, generated families and future builds.",
+    "Documentation, exported names and runnable functions are not interchangeable sets.",
+    "Some entries intentionally provide no runnable example because dependencies or safe semantics were not established.",
+    "Source-reviewed log2 and degradeByWith differ from the tested published package; read their entry notes."
+  ],
+  "withheldProblematicEntries": [
+    "smear",
+    "clearGamepadStates",
+    "setVoicingRange"
+  ],
+  "externalSources": [
+    "https://strudel.cc/technical-manual/packages/",
+    "https://strudel.cc/technical-manual/docs/"
+  ],
+  "downstreamCorrections": [
+    "angle example now supplies r for radial placement; angle is not rotation.",
+    "speak note describes cancellation/replacement rather than a speech queue."
+  ]
+}
